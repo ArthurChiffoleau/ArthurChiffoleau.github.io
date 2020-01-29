@@ -7,7 +7,7 @@ body {
 /*--- navigation bar ---*/
 
 .navbar {
-	background: #2a2b6d;
+	background: #1f212b;
 }
 
 .nav-link,
@@ -37,6 +37,17 @@ body {
 	position: relative;
 }
 
+.missionHermes {
+	background-image: url('images/Mission-Hermes/Mission-Hermes_Couv_sans_le_titreVeryOPti.jpg');
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+.missionHermes h3{
+	color: rgb(228, 151, 79);
+}
+
 .overlay {
 	position: absolute;
 	min-height: 100%;
@@ -52,6 +63,20 @@ body {
 	top: 45%;
 	transform: translate(-50%, -55%);
 	text-align: center;
+}
+
+.mainElement {	
+	text-align: left;
+}
+
+.mainElement p{
+	color: #fff;
+}
+
+.imageMainPage{
+	display: block;
+	width: 50%;
+	height: auto;
 }
 
 .description h1 {
