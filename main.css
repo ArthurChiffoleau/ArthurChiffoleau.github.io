@@ -31,7 +31,7 @@ body {
 /*--- header ---*/
 
 .header2 {
-	background-image: url('images/wlp5.jpg');
+	background-image: url('/images/wlp5.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -39,7 +39,7 @@ body {
 }
 
 .missionHermes {
-	background-image: url('images/Mission-Hermes/Mission-Hermes_Couv_sans_le_titreOPTIMIZE.jpg');
+	background-image: url('/images/Mission-Hermes/Mission-Hermes_Couv_sans_le_titreOPTIMIZE.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -120,7 +120,7 @@ body {
 
 /*--- Contact---*/
 .contact {	
-	background-image: url('images/wlp5.jpg');
+	background-image: url('/images/wlp5.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -153,6 +153,16 @@ body {
 	margin-bottom: 20px;
 	margin-top: 40px;
 	text-transform: uppercase;
+}
+
+.project-title{
+	color: #000;
+	font: 2rem ;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 80px;
+	margin-top: 40px;
 }
 
 .features img {
