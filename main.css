@@ -31,15 +31,13 @@ body {
 /*--- header ---*/
 
 .header2 {
-	background-image: url('/images/wlp5.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	position: relative;
 }
 
-.missionHermes {
-	background-image: url('/images/Mission-Hermes/Mission-Hermes_Couv_sans_le_titreOPTIMIZE.jpg');
+.missionHermes {	
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -48,6 +46,11 @@ body {
 
 .missionHermes h3{
 	color: rgb(228, 151, 79);
+}
+
+.centralText{
+	padding-left: 10%;
+	padding-right: 10%;
 }
 
 .overlay {
@@ -107,6 +110,11 @@ body {
 	color: #000;
 }
 
+.imagePortfolio{
+	max-width: 20%;
+	height: auto;
+}
+
 /*---Link ---*/
 .goto-link{
 	color: rgb(179, 128, 128);
@@ -120,7 +128,6 @@ body {
 
 /*--- Contact---*/
 .contact {	
-	background-image: url('/images/wlp5.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -140,9 +147,7 @@ body {
 
 
 
-.features {
-	
-	
+.features {	
 	position: relative;
 }
 
@@ -193,19 +198,18 @@ body {
 
 .page-footer {
 	background-color: #222;
-	color: #ccc;
+	color: rgb(88, 58, 58);
 	padding: 60px 0 30px;
 }
 
 .footer-copyright {
-	color: #666;
+	color: rgb(126, 126, 126);
 	padding: 40px 0;
 }
 
 /*--- media queries ---*/
 
 @media (max-width: 575.98px) {
-
 	.description {
 		left: 0;
 		padding: 0 15px;

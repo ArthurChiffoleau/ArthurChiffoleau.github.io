@@ -1,14 +1,14 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "Arthur Chiffoleau Portfolio",
+    "short_name": "Portfolio",
     "icons": [
         {
-            "src": "/android-chrome-192x192.png",
-            "sizes": "192x192",
+            "src": "favicon.png",
+            "sizes": "300x300",
             "type": "image/png"
         }
     ],
-    "theme_color": "#ffffff",
-    "background_color": "#ffffff",
+    "theme_color": "#8c8d8a",
+    "background_color": "#8c8d8a",
     "display": "standalone"
 }
