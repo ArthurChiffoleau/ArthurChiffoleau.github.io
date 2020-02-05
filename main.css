@@ -1,7 +1,14 @@
+/*--- Load other css ---*/
+
+@import "/bootstrap/css/bootstrap.min.css";
+@import "/css/modal.css";
+
+
 body {
 	padding: 0;
 	margin: 0;
 	background: #8c8d8a;
+	color: #fff;
 }
 
 /*--- navigation bar ---*/
