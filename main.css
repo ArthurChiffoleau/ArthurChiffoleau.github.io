@@ -260,3 +260,8 @@ body {
 .clear{
     clear:both;
 }
+
+.imageLeft{
+	padding-left: 10%;
+	
+}
