@@ -20,7 +20,11 @@ Notes
 https://www.gradient-animator.com/
 
 Todo:
--Update Wario Ware page text
--Update index wario ware section
--Fix Itchio Widget and make it reponsive
--translate evrything in english ?
+-Add Wario ware link when available again
+-CV v3 with date to the left before text
+-Site v2 with case study for project
+(https://medium.com/@thethirdkate/11-portfolio-tips-for-game-design-graduates-437df78f0ba0)
+
+-Add "for in a shock" to game jams and other project
+-Add duration in the card for each game
+-Add description of myself
