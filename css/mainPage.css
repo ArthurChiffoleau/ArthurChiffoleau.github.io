@@ -1,0 +1,58 @@
+/*--- Button ---*/
+.buttonIndexPage {
+	background-color: rgb(6, 122, 139);
+	border: 1px solid rgb(107, 219, 237);
+}
+
+.buttonIndexPage:hover {
+	background-color: #333;
+	border: 1px solid #333;
+}
+
+
+
+.mainPageImg img{
+	background-color: rgba(51, 51, 51, 0.712);
+}
+
+
+/* En tete */
+.introduction {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.myPersonnalDescription {
+	text-align: left;
+	color: rgb(158, 158, 158);
+	font-size: 1rem;
+	padding-left: 10rem;
+	padding-right: 10rem;
+	padding-bottom: 60px;
+	padding-top: 20px;
+}
+/* En tete -end */
+
+/*--Content --*/
+.projectCard {	
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.projectCard h3{
+	color: rgb(228, 151, 79);
+}
+
+.projectTitle {
+	color: #333;
+	font-size: 1.3rem;
+	font-weight: 700;
+	margin-bottom: 20px;
+	margin-top: 40px;
+	text-transform: uppercase;
+}
+/*--Content_end--*/

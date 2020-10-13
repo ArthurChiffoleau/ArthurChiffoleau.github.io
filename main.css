@@ -3,8 +3,13 @@
 @import "/bootstrap/css/bootstrap.min.css";
 @import "/css/modal.css";
 
+@import "/css/mainPage.css";
+@import "/css/project.css";
+@import "/css/minorPage.css";
 
+/*--- Load other css_End ---*/
 
+/*--- Body ---*/
 body {
 	padding: 0;
 	margin: 0;
@@ -16,28 +21,30 @@ body::-webkit-scrollbar {
 	width: 1em;
 	background-color: #1c1e1f;
     color: #c5c1b9;;
-  }
-   
-  body::-webkit-scrollbar-track {
-	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  }
-  body::-webkit-scrollbar-corner {
-    background-color: #181a1b;
-	}
-   
-  body::-webkit-scrollbar-thumb {
-	background-color: #2a2c2e;
-	outline: 1px solid slategrey;
-  }
+}
+
+body::-webkit-scrollbar-track {
+box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-corner {
+background-color: #181a1b;
+}
+
+body::-webkit-scrollbar-thumb {
+background-color: #2a2c2e;
+outline: 1px solid slategrey;
+}
+
+
+/*--- Body_end ---*/
 
 /*--- navigation bar ---*/
-
 .navbar {
 	background: #1f212b;
 }
 
-.nav-link,
-.navbar-brand {
+.nav-link, .navbar-brand {
 	color: #fff;
 	cursor: pointer;
 }
@@ -53,27 +60,51 @@ body::-webkit-scrollbar {
 .navbar-collapse {
 	justify-content: flex-end;
 }
+/*--- navigation bar_end ---*/
 
-/*--- header ---*/
-
-.header2 {
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	position: relative;
+/*---Link ---*/
+.goto-link{
+	color: rgb(69, 52, 218);
+	cursor: pointer;
+	margin-left: 1em !important;
 }
 
-.missionHermes {	
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	position: relative;
+.goto-link:hover {
+	color: rgb(114, 113, 113);
+}
+/*---Link_end ---*/
+
+/*---Footer---*/
+.e-mail:before {
+	content: attr(data-website) "\0040" attr(data-user);
+	unicode-bidi: bidi-override;
+	direction: rtl;
+	font-style: italic;
 }
 
-.missionHermes h3{
-	color: rgb(228, 151, 79);
+.page-footer {
+	background-color: #222;
+	color: rgb(175, 175, 175);
+	padding-top: 10px;
+	padding-bottom: 0.1px;
+	
 }
 
+.footer-copyright {
+	color: rgb(126, 126, 126);
+}
+
+.footerAbout {
+	position: absolute;
+  	bottom: 0;
+  	width: 100%;
+}
+/*---Footer_end---*/
+
+
+
+
+/*--- General ---*/
 .centralText{
 	padding-left: 10%;
 	padding-right: 10%;
@@ -101,21 +132,6 @@ body::-webkit-scrollbar {
 	text-align: center;
 }
 
-.mainElement {	
-	padding-bottom: 30px;
-	text-align: left;
-}
-
-.mainElement p{
-	color: #fff;
-}
-
-.imageMainPage{
-	display: block;
-	width: 50%;
-	height: auto;
-}
-
 .description h1 {
 	color: #6ab446;
 	padding-bottom: 30px;
@@ -140,86 +156,18 @@ body::-webkit-scrollbar {
 	color: #000;
 }
 
-.imagePortfolio{
-	max-width: 20%;
-	height: auto;
+.mainElement {	
+	padding-bottom: 30px;
+	text-align: left;
 }
 
-/*---Link ---*/
-.goto-link{
-	color: rgb(69, 52, 218);
-	cursor: pointer;
-	margin-left: 1em !important;
-}
-
-.goto-link:hover {
-	color: rgb(114, 113, 113);
-}
-
-/*--- Contact---
-.contact {	
-	height: 100%;
-	width: 100%;
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	position: relative;
-	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	background-size: cover;
-	-o-background-size: cover;
-	display: block;
-	
+.mainElement p{
+	color: #fff;
 }
 
 
-
-
-.contactHtmlBody{
-	height: 100%;
-	width: 100%;
-}*/
-
-.imageBackgroundHtmlBody {
-	background-size: cover;
-	background-position: center;
-
-	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-	-o-background-size: cover;
-
-	/* Set rules to fill background */
-	min-height: 100%;
-	min-width: 1024px;
-	  
-	/* Set up proportionate scaling */
-	width: 100%;
-	height: auto;
-	  
-	/* Set up positioning */
-	position: fixed;
-	top: 0;
-	left: 0;
-  }
-  
-  @media screen and (max-width: 1024px) { /* Specific to this particular image */
-	.imageBackgroundHtmlBody {
-		background-size: cover;
-		background-position: center;
-	
-		-webkit-background-size: cover;
-		  -moz-background-size: cover;
-		-o-background-size: cover;	
-
-	  left: 50%;
-	  margin-left: -512px;   /* 50% */
-	}
-  }
 
 /*--- feature section ---*/
-
-
-
 .features {	
 	position: relative;
 }
@@ -233,29 +181,11 @@ body::-webkit-scrollbar {
 	text-transform: uppercase;
 }
 
-.project-title{
-	color: #000;
-	font: 2rem ;
-	font-weight: 700;
-	text-align: center;
-	text-transform: uppercase;
-	margin-bottom: 80px;
-	margin-top: 40px;
-}
-
 .features img {
 	-webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 	-moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 	margin-bottom: 16px;
-	
-}
-
-
-
-.features .form-control,
-.features input {
-	border-radius: 0;
 }
 
 .features .btn {
@@ -267,137 +197,4 @@ body::-webkit-scrollbar {
 	background-color: #333;
 	border: 1px solid #333;
 }
-
-.buttonIndexPage {
-	background-color: rgb(6, 122, 139);
-	border: 1px solid rgb(107, 219, 237);
-}
-
-.buttonIndexPage:hover {
-	background-color: #333;
-	border: 1px solid #333;
-}
-
-/*--- footer ---*/
-
-.page-footer {
-	background-color: #222;
-	color: rgb(175, 175, 175);
-	padding-top: 10px;
-	padding-bottom: 0.1px;
-	
-}
-
-.hermesImg img{
-	background-color: rgba(51, 51, 51, 0.712);
-}
-
-.footer-copyright {
-	color: rgb(126, 126, 126);
-}
-
-.footerAbout {
-	position: absolute;
-  	bottom: 0;
-  	width: 100%;
-}
-
-/*--- media queries ---*/
-
-/*@media (max-width: 575.98px) {
-	.description {
-		left: 0;
-		padding: 0 15px;
-		position: absolute;
-		top: 10%;
-		transform: none;
-		text-align: center;
-	}
-	
-	.description h1 {
-		font-size: 2em;
-	}
-	
-	.description p {
-		font-size: 1.2rem;
-	}
-	
-	.features {
-		margin: 0;
-	}
-
-}*/
-
-.centerIframe {
-	width: 500px; /* It should not be 100% */
-	height: 500px;
-	margin-left: auto;   /* Automatic margin from left */
-	margin-right: auto;
-	margin-bottom: 50px;
-}
-
-.sideBySideIframe{
-    float:left;
-	margin-right:20px;
-	margin-bottom: 50px;
-	margin-top: 20px;
-}
-
-.clear{
-    clear:both;
-}
-
-.imageLeft{
-	padding-left: 10%;
-	
-}
-
-.espacement{
-	padding-bottom: 70px;
-}
-
-.e-mail:before {
-	content: attr(data-website) "\0040" attr(data-user);
-	unicode-bidi: bidi-override;
-	direction: rtl;
-	font-style: italic;
-
-}
-
-.patternGameJam {
-	background-color: #e7e4e1;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='199' viewBox='0 0 100 199'%3E%3Cg fill='%23000000' fill-opacity='0.51'%3E%3Cpath d='M0 199V0h1v1.99L100 199h-1.12L1 4.22V199H0zM100 2h-.12l-1-2H100v2z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
-
-}
-
-.patternGameJamPage {
-	background-color: transparent;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='199' viewBox='0 0 100 199'%3E%3Cg fill='%23000000' fill-opacity='0.51'%3E%3Cpath d='M0 199V0h1v1.99L100 199h-1.12L1 4.22V199H0zM100 2h-.12l-1-2H100v2z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
-
-}
-
-.myPersonnalDescription {
-	text-align: left;
-	color: rgb(158, 158, 158);
-	font-size: 1rem;
-	padding-left: 10rem;
-	padding-right: 10rem;
-	padding-bottom: 60px;
-	padding-top: 20px;
-}
-
-
-.nextButton{
-	background-color: rgb(58, 59, 59);
-	border: 1px solid rgb(52, 64, 66);
-	float: right;
-}
-
-.nextButton:hover{
-	background-color: #333;
-	border: 1px solid #333;
-}
-
-.precedentButton{
-	float: left;
-}
+/*--- feature_end ---*/
