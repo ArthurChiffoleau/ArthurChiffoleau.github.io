@@ -13,6 +13,7 @@
 
 .mainPageImg img{
 	background-color: rgba(51, 51, 51, 0.712);
+	
 }
 
 
@@ -28,8 +29,6 @@
 	text-align: left;
 	color: rgb(158, 158, 158);
 	font-size: 1rem;
-	padding-left: 10rem;
-	padding-right: 10rem;
 	padding-bottom: 60px;
 	padding-top: 20px;
 }
@@ -54,5 +53,14 @@
 	margin-bottom: 20px;
 	margin-top: 40px;
 	text-transform: uppercase;
+}
+
+.projectContent{
+	padding-top: 10rem;
+	/*
+	padding-left: 10em;
+	padding-right: 10em;*/
+	
+
 }
 /*--Content_end--*/
