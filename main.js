@@ -38,3 +38,14 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 };
+
+/*
+//Navbar expand in mobile
+function expandNavbar() {
+  var x = document.getElementById("main-navigation");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+} */

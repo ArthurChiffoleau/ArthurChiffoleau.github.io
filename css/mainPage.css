@@ -2,6 +2,7 @@
 .buttonIndexPage {
 	background-color: rgb(6, 122, 139);
 	border: 1px solid rgb(107, 219, 237);
+	
 }
 
 .buttonIndexPage:hover {
@@ -56,7 +57,7 @@
 }
 
 .projectContent{
-	padding-top: 10rem;
+	padding-bottom: 10px;
 	/*
 	padding-left: 10em;
 	padding-right: 10em;*/
