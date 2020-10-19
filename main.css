@@ -11,34 +11,47 @@
 
 /*--- Body ---*/
 body {
-	padding-top: 3.5rem;
-	padding: 0;
-	margin: 0;
+	
+	margin-top: 3rem;
 	background: #8c8d8a;
 	color: #fff;
 }
 
-body::-webkit-scrollbar {
-	width: 1em;
-	background-color: #1c1e1f;
-    color: #c5c1b9;;
-}
-
-body::-webkit-scrollbar-track {
-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-}
-
-body::-webkit-scrollbar-corner {
-background-color: #181a1b;
-}
-
-body::-webkit-scrollbar-thumb {
-background-color: #2a2c2e;
-outline: 1px solid slategrey;
-}
-
-
 /*--- Body_end ---*/
+
+/*--- Scrollbar ---*/
+::-webkit-scrollbar {
+    background-color: #202324;
+    color: #aba499;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #454a4d;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #575e62;
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: #484e51;
+}
+::-webkit-scrollbar-corner {
+    background-color: #181a1b;
+}
+* {
+    scrollbar-color: #202324 #454a4d;
+}
+/*--- Scrollbar_end---*/
+
+/*--- Selection ---*/
+::-moz-selection {
+  background:#45c53998; /* Gecko Browsers */
+}
+
+::selection {
+  background: #45c53998; /* WebKit/Blink Browsers */
+}
+/*--- Selection ---*/
+
+
 
 /*--- navigation bar ---*/
 .navbar {
@@ -66,13 +79,14 @@ outline: 1px solid slategrey;
 
 /*---Link ---*/
 .goto-link{
-	color: rgb(69, 52, 218);
+	color: #fff;
 	cursor: pointer;
 	margin-left: 1em !important;
 }
 
 .goto-link:hover {
-	color: rgb(114, 113, 113);
+	color: rgb(179, 175, 175);
+	background-color: rgb(71, 85, 83);
 }
 /*---Link_end ---*/
 
@@ -123,6 +137,8 @@ outline: 1px solid slategrey;
 	
 }
 
+/*--- General_end ---*/
+
 .description {	
 	text-align: center;
 	margin-bottom: 30px;
@@ -168,8 +184,9 @@ outline: 1px solid slategrey;
 }
 
 
+/*TO REMOVE ASAP*/
 /*--- feature section ---*/
-.features {	
+/*.features {	
 	position: relative;
 }
 
@@ -197,5 +214,5 @@ outline: 1px solid slategrey;
 .features .btn:hover {
 	background-color: #333;
 	border: 1px solid #333;
-}
+} */
 /*--- feature_end ---*/

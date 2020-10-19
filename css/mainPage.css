@@ -10,13 +10,9 @@
 	border: 1px solid #333;
 }
 
-
-
 .mainPageImg img{
 	background-color: rgba(51, 51, 51, 0.712);
-	
 }
-
 
 /* En tete */
 .introduction {
@@ -26,12 +22,22 @@
 	position: relative;
 }
 
-.myPersonnalDescription {
-	text-align: left;
-	color: rgb(158, 158, 158);
-	font-size: 1rem;
-	padding-bottom: 60px;
-	padding-top: 20px;
+.myPersonnalDescription {	
+	padding-bottom: 8rem;
+	padding-top: 40px;
+	text-align: center;
+}
+
+.myPersonnalDescription h1{
+	text-align: ce;
+	color: rgb(125, 192, 92);
+	padding-bottom: 3rem;
+	font-size: 2.5rem;
+}
+
+.myPersonnalDescription p{
+	font-size: 1.3rem;
+	line-height: 1.5;
 }
 /* En tete -end */
 
@@ -45,6 +51,7 @@
 
 .projectCard h3{
 	color: rgb(228, 151, 79);
+	padding-left: 1.3rem;
 }
 
 .projectTitle {
@@ -57,11 +64,20 @@
 }
 
 .projectContent{
-	padding-bottom: 10px;
+	padding-bottom: 3rem;
 	/*
 	padding-left: 10em;
 	padding-right: 10em;*/
-	
-
 }
 /*--Content_end--*/
+
+/*---project specific---*/
+.patternGameJam {
+	background-color: #e7e4e1;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='199' viewBox='0 0 100 199'%3E%3Cg fill='%23000000' fill-opacity='0.51'%3E%3Cpath d='M0 199V0h1v1.99L100 199h-1.12L1 4.22V199H0zM100 2h-.12l-1-2H100v2z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+	
+	background-repeat: repeat;
+	background-size: auto;
+	background-position: center;
+}
+/*---project specific_end---*/
