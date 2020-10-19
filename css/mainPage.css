@@ -2,7 +2,6 @@
 .buttonIndexPage {
 	background-color: rgb(6, 122, 139);
 	border: 1px solid rgb(107, 219, 237);
-	
 }
 
 .buttonIndexPage:hover {
@@ -23,7 +22,7 @@
 }
 
 .myPersonnalDescription {	
-	padding-bottom: 8rem;
+	padding-bottom: 16rem;
 	padding-top: 40px;
 	text-align: center;
 }
@@ -31,6 +30,7 @@
 .myPersonnalDescription h1{
 	text-align: ce;
 	color: rgb(125, 192, 92);
+	padding-top: 3rem;
 	padding-bottom: 3rem;
 	font-size: 2.5rem;
 }
@@ -58,13 +58,15 @@
 	color: #333;
 	font-size: 1.3rem;
 	font-weight: 700;
-	margin-bottom: 20px;
-	margin-top: 40px;
 	text-transform: uppercase;
+	padding-bottom: 1.3rem;
 }
 
 .projectContent{
+	padding-top: 3rem;
 	padding-bottom: 3rem;
+
+
 	/*
 	padding-left: 10em;
 	padding-right: 10em;*/
