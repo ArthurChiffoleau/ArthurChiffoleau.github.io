@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!-- Header get css-->
-  <head>
+<!-- Header get css-->
+<head>
     <title>Portfolio</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">   
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/main.css">
-  </head>
-
+</head>
+    
 <!--Body -->
 <body>
 <!-- #region navigation bar(top) -->
@@ -37,59 +38,42 @@
 </nav>
 <!-- #endregion navbar -->
 
-<div class="container-fluid missionHermes" style="background-image: url('/images/Mission-Hermes/Mission-Hermes_Couv_sans_le_titreOPTIMIZE.jpg');">
-    <div class="overlay"></div>
-    <div class="row justify-content-center mainElement">
-        <div class="col-8">
-            <h3 class="project-title">Mission Hermes</h3>
-            <div class="row">
-                <div class="col-8">
-                    <img class="card-img" src="/images/Mission-Hermes/MissionHermes Vue 3D OPTI.png" >
-                </div>
-                <div class="col align-self-center">
-                    <ul>
-                        <li>Boardgame</li>
-                        <li>Midcore - Hardcore</li>
-                        <li>Gestion - strategy</li>
-                        <li>3 - 4 players</li>
-                        <li>1h - 1h30+</li>
-                    </ul>
-                    
-                    <p>   </p>
-                </div>
+<!-- #region content -->
+<div class="projectCard" style="background-image: url('/images/Mission-Hermes/Mission-Hermes_Couv_sans_le_titreOPTIMIZE.jpg'); ">
+	<div class="overlay"></div>
+    <div class="container align-content-center">
+        <div class="row">
+            <div class="col">
+                <h1 class="project-title">Mission Hermes</h1>
             </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img class="card-img" src="/images/Mission-Hermes/MissionHermes Vue 3D OPTI.png" >
+            </div>
+            <div class="col-xs-12 col-md-6 pull-right">
+                <ul>
+                    <li>Boardgame</li>
+                    <li>Midcore - Hardcore</li>
+                    <li>Gestion - strategy</li>
+                    <li>3 - 4 players</li>
+                    <li>1h - 1h30+</li>
+                </ul>
+            </div>
+        </div>
 
-            <div class="centralText"> 
+        <div class="row">
+            <div class="col">
                 <h6 class="text-uppercase font-weight-bold">PITCH</h6>
 
                 <p>We are in 2050, the race to spatial colonisation is in full swing. You are at the head of a company who has sensed the potential profits that could be made on Mars, but you are not alone to be attracted by the gains. Only one company will be victorious of this Mars rush. And you cannot conceive to let the others win and that's good because just like you the others are without faith or laws.
                 To take the victory there is no holds barred, may it be false alliances, betrayals or dirty deals; this will be your daily life.</p>
 
-                <p>Your objective is to generate as much profit (in Credits) as you can, by exploiting Mars resources. The credits gained will allow you to buy economics centers and shares on Earth. To make it to your end, you will take into account the fluctuations of the stock market, the different natural events and the other players who might try to buy your company actions.
-                </p>
-
-                <!-- <p>Nous sommes en 2050, la course à la colonisation spatiale est enclenchée. Vous
-                êtes à la tête d’une entreprise qui a pressenti les potentiels bénéfices sur Mars,
-                mais vous n’êtes pas seul à être appâté par les gains. Seulement une unique
-                entreprise sera véritablement victorieuse de cette ruée sur Mars. Et Il vous est
-                inconcevable de laisser la victoire aux autres et ça tombe bien, car vous comme les
-                autres êtes sans foi ni loi. Pour l’emporter tous les coups bas sont permis: alliances,
-                trahisons et accords frauduleux seront votre quotidien.</p>
-
-                <p>Votre objectif est d’engendrer un maximum de profits (en Crédit) en exploitant
-                les ressources Martiennes. Les Crédits obtenus vous permettront d’acheter des
-                centres économiques et des actions sur terre. Pour arriver à vos fins, vous prendrez
-                en compte les fluctuations de la bourse, les différents évènements naturels ainsi
-                que les autres joueurs qui tenteront de racheter vos actions !</p>-->
-            </div>
-            <div class="row justify-content-center" >
-                <div class="col-4" >
-                    <img class="card-img myImages" src="/images/Mission-Hermes/MissionHermes1erTour.png" 
+                <p>Your objective is to generate as much profit (in Credits) as you can, by exploiting Mars resources. The credits gained will allow you to buy economics centers and shares on Earth. To make it to your end, you will take into account the fluctuations of the stock market, the different natural events and the other players who might try to buy your company actions. </p>
+                
+                <img class="card-img myImages" src="/images/Mission-Hermes/MissionHermes1erTour.png" 
                     data-toggle="tooltip" data-placement="top" title="Board before game start." alt="Board before game start.">
-                </div>
-   
-            </div>
-            <div class="centralText">         
+                
                 <h6 class="text-uppercase font-weight-bold">ROLE</h6>
                 <p>
                 On this project I was a Game Designer with two others and three artists. My missions were the following:
@@ -99,74 +83,85 @@
                     <li>Making paper prototypes,</li>
                     <li>Observating and analyzing our playtests,</li>
                     <li>Writing the rulebook of the game.</li>
-                </ul>
-            </div>
-            <div class="row">
-                <div class="col-4">
-                    <img class="card-img myImages" src="/images/Mission-Hermes/Proto1_OPTI.jpg" data-toggle="tooltip" data-placement="top" title="One of the first prototypes" alt="One of the first prototypes"> 
-                </div>
-                <div class="col-4">
-                    <img class="card-img myImages" src="/images/Mission-Hermes/Proto2_OPTI.jpg"
-                    data-toggle="tooltip" data-placement="top" title="Advanced iteration with new version of the victory system." alt="Advanced iteration with new version of the victory system." >
-                </div>
-                <!--<div class="col-4">
-                    <img class="card-img" src="/images/Mission-Hermes/Proto3_OPTI.jpg">
-                </div> -->
-                <div class="col-4">
-                    <img class="card-img myImages" src="/images/Mission-Hermes/ProtoFinal_OPTI.jpg"
-                    data-toggle="tooltip" data-placement="top" title="Last version of Mars on the final prototype." alt="Last version of Mars on the final prototype.">
-                </div>               
-            </div>
-            <div class="row" >
-                <div class="col">
-                    <img class="card-img myImages" src="/images/Mission-Hermes/Proto3_OPTI.jpg"
-                    data-toggle="tooltip" data-placement="top" title="First version of event card and new iteration of mars." alt="First version of event card and new iteration of mars.">
-                </div>
-                <div class="col">
-                    <img class="card-img myImages" src="/images/Mission-Hermes/ProtoFinalFull_OPTI.jpg" 
-                    data-toggle="tooltip" data-placement="top" title="Final version of the game" alt="Final version of the game">
-                </div>
-            </div>
-            
-            <div class= "row">
-                <!--<div class= "col">                   
-                    <a class="btn btn-success nextButton precedentButton" href="/index.html">Precedent page</a>
-                </div> -->
-                <div class= "col">                   
-                    <a class="btn btn-success nextButton" href="/pages/projets/WarioWareNoPainNoGain.html">Next: Wario Ware</a>
-                </div>
+                
             </div>
         </div>
-        
-        
-    </div> 
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-        <!-- The Close Button -->
-        <span class="close">&times;</span>
-    
-        <!-- Modal Content (The Image) -->
-        <img class="modal-content" id="img01">
-    
-        <!-- Modal Caption (Image Text) -->
-        <div id="caption"></div>
+
+        <div class="row">
+            <div class="col">
+                <img class="card-img myImages" src="/images/Mission-Hermes/Proto1_OPTI.jpg" data-toggle="tooltip" data-placement="top" title="One of the first prototypes" alt="One of the first prototypes">
+            </div>
+            <div class="col-xs-12 col-md-4 pull-right">
+                <img class="card-img myImages" src="/images/Mission-Hermes/Proto2_OPTI.jpg"
+                    data-toggle="tooltip" data-placement="top" title="Advanced iteration with new version of the victory system." alt="Advanced iteration with new version of the victory system." >
+            </div>
+            <div class="col-xs-12 col-md-4 pull-right">
+                <img class="card-img myImages" src="/images/Mission-Hermes/ProtoFinal_OPTI.jpg"
+                    data-toggle="tooltip" data-placement="top" title="Last version of Mars on the final prototype." alt="Last version of Mars on the final prototype.">
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col">
+                <img class="card-img myImages" src="/images/Mission-Hermes/Proto3_OPTI.jpg"
+                    data-toggle="tooltip" data-placement="top" title="First version of event card and new iteration of mars." alt="First version of event card and new iteration of mars.">
+            </div>
+            <div class="col-xs-12 col-md-6 pull-right">
+                <img class="card-img myImages" src="/images/Mission-Hermes/ProtoFinalFull_OPTI.jpg" 
+                    data-toggle="tooltip" data-placement="top" title="Final version of the game" alt="Final version of the game">
+            </div>
+        </div>
+
+        <div class= "row">
+            <!--<div class= "col">                   
+                <a class="btn btn-success nextButton precedentButton" href="/index.html">Precedent page</a>
+            </div> -->
+            <div class= "col">                   
+                <a class="btn btn-success nextButton" href="/pages/projets/WarioWareNoPainNoGain.html">Next: Wario Ware →</a>
+            </div>
+        </div>
+
     </div>
+	
+
 </div>
 
 
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" id="img01">
+
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption"></div>
+</div>
+
+
+
+
+
+<!-- #endregion content -->
+    
 <!-- #region Footer -->
-<footer class="page-footer">		
-    <div class="text-center">
-        <p> Arthur Chiffoleau © 2020 Copyright / Paris - France / Contact me at <span class="e-mail" data-user="uaeloffihc.a" data-website="moc.ude-akibur"></span></p>      
-    </div>
+<footer class="page-footer">
+	
+	<div class="text-center">
+		<p> Arthur Chiffoleau © 2020 Copyright / Paris - France / Contact me at <span class="e-mail" data-user="uaeloffihc.a" data-website="moc.ude-akibur"></span></p>
+		
+	</div>
 </footer>
-<!-- #endregion -->
+<!-- #endregion footer-->
+	
 
-
-
-<!-- Get Script-->
-<script src="/jquery-3.4.1.min.js"></script>
-<script src="/bootstrap/js/bootstrap.min.js"></script>
-<script src="/main.js"></script>
+<!-- Get Script
+<script src="jquery-3.4.1.min.js" async></script>
+<script src="bootstrap/js/bootstrap.min.js" async></script> -->
+<script src="main.js" defer></script>
+<script src="/js/navbar.js"></script>
 </body>
 </html>
