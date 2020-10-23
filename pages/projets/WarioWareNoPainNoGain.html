@@ -1,192 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!-- Header get css-->
-  <head>
+<!-- Header get css-->
+<head>
     <title>Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="/main.css">
     <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/main.css">
+</head>
     
-  </head>
-
 <!--Body -->
 <body>
-<!--  navigation bar(top) -->
-<nav class="navbar navbar-expand-md">
-    <a class="navbar-brand" href="/index.html">Arthur Chiffoleau</a>
-    <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="main-navigation">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="/index.html">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/pages/about.html">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/pages/contact.html">Contact</a>
-            </li>
-        </ul>
-    </div>
+<!-- #region navigation bar(top) -->
+<nav class="navbar navbar-expand-md fixed-top">
+	<a class="navbar-brand" href="/index.html">ArthurChiffoleau</a>
+
+	<button class="navbar-toggler navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="main-navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span>
+			<img src="/images/icons/three-bars.svg" />
+		</span>
+	</button>
+
+	<div class="collapse navbar-collapse" id="navbar">
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a class="nav-link" href="/index.html">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="/pages/about.html">About</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="/pages/contact.html">Contact</a>
+			</li>
+		</ul>
+	</div>
 </nav>
-<!-- #endregion -->
+<!-- #endregion navbar -->
 
-<!-- #region Contenu -->
-<div class="container-fluid missionHermes" style="background-image: url('/images/WarioWare/WW-Charcters-OPTI-2.jpg');">
-    <div class="overlay"></div>
-    <div class="row justify-content-center mainElement">
-        <div class="col-8">
-            <h3 class="project-title">WARIO WARE NO PAIN NO GAIN</h3>
-            <div class="row">
-                <div class="col-8">
-                    <img class="card-img" src="/images/WarioWare/WW-MainScreen-OPTI.jpg" >
-                </div>
-                <div class="col align-self-center">
-                    <ul>
-                        <li>Video Game - PC</li>
-                        <li>Mouse and keyboard</li>
-                        <li>Midcore</li>
-                        <li>Wario-ware (series of mini-game)</li>
-                        <li>Solo</li>
-
-                    </ul>
-                    
-                    <p>   </p>
-                </div>
+<!-- #region content -->
+<div class="projectCard rowPadding" style="background-image: url('/images/WarioWare/WW-Charcters-OPTI-2.jpg');">
+	<div class="overlay"></div>
+    <div class="container align-content-center">
+        <div class="row">
+            <div class="col">
+                <h1 class="project-title">WARIO WARE NO PAIN NO GAIN</h1>
             </div>
+        </div>
+        <div class="row ">
+            <div class="col">
+                <img class="card-img" src="/images/WarioWare/WW-MainScreen-OPTI.jpg" >
+            </div>
+            <div class="col-xs-12 col-md-6 pull-right">
+                <ul>
+                    <li>Video Game - PC</li>
+                    <li>Mouse and keyboard</li>
+                    <li>Midcore</li>
+                    <li>Wario-ware (series of mini-game)</li>
+                    <li>Solo</li>
+                </ul>
+            </div>
+        </div>
 
-            <div class="centralText"> 
+        <div class="row">
+            <div class="col">
                 <h6 class="text-uppercase font-weight-bold">PROJECT</h6>
 
                 <p>We have been assigned to make a Wario -Ware game as a class project. We were 40, each of us was at charge to make two documentations for two mini-games, then we had to develop two mini-games conceived by someone else by following their documentations.
-                In addition of their mini-games, some people have taken the responsability of the realisation of the game's structure which englobs the mini-games. I was part of this team as a Game Designer and a Sound Designer.
-                </p>
-            </div>
-            <div class="row justify-content-center" >
-                <div class="col-6" >
-                    <img class="card-img myImages" src="/images/WarioWare/WW-MiniGames-OPTI.jpg" 
-                    data-toggle="tooltip" data-placement="top" title="Plateau avant le départ de la partie.">
-                </div>
-            </div>
-            <div class="centralText"> 
-
+                In addition of their mini-games, some people have taken the responsability of the realisation of the game's structure which englobs the mini-games. I was part of this team as a Game Designer and a Sound Designer.</p>
+                
+                <img class="card-img myImages" src="/images/WarioWare/WW-MiniGames-OPTI.jpg" 
+                    data-toggle="tooltip" data-placement="top" title="Board before game start." alt="Board before game start.">
+                
                 <h6 class="text-uppercase font-weight-bold">Mini-Games designed</h6>
+                
                 <p>I have designed two mini-games: Angry Wario Kid and Save America. In Angry Wario Kid, you have to destroy a virtual keyboard by smashing the keys of your actual keyboard.
                 In Save America, you have to cut the good wires on a bomb to diffuse it and save your great country America.
                 </p>
             </div>
+        </div>
 
-            <div class="row">
-                <div  class="col">
-                    <img class="card-img myImages" src="/images/WarioWare/WW-AngryWarioKid-OPTI.jpg" 
-                    data-toggle="tooltip" data-placement="top" title="Version final du jeu" alt="Version final du jeu">
-                </div >
-                <div  class="col">
-                    <img class="card-img myImages" src="/images/WarioWare/WW-SaveAmerica-OPTI.jpg" 
-                    data-toggle="tooltip" data-placement="top" title="Version final du jeu" alt="Version final du jeu">
-                </div >
+        <div class="row">
+            <div  class="col-xs-12 col-md-6">
+                <img class="card-img myImages" src="/images/WarioWare/WW-AngryWarioKid-OPTI.jpg" 
+                data-toggle="tooltip" data-placement="top" title="Version final du jeu" alt="Version final du jeu">
+            </div >
+            <div  class="col-xs-12 col-md-6 pull-right">
+                <img class="card-img myImages" src="/images/WarioWare/WW-SaveAmerica-OPTI.jpg" 
+                data-toggle="tooltip" data-placement="top" title="Version final du jeu" alt="Version final du jeu">
+            </div >
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-md-6 embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/6wS4wbno30M" frameborder="0"  allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
             </div>
 
-            <div class="row">
-                <div class="col sideBySideIframe clear embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/6wS4wbno30M" frameborder="0"  allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
-                </div>
-    
-                <div class="col sideBySideIframe clear embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/ilBtcj6Zowg" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
-                </div>
+            <div class="col-xs-12 col-md-6 pull-right embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/ilBtcj6Zowg" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
             </div>
-            <div class="centralText">         
+        </div>
+
+
+        <div class="row">
+            <div class="col">
                 <h6 class="text-uppercase font-weight-bold">MINI-GAMES MAde</h6>
                 <p>
                 I have programmed two mini-games: Cave-Digger and It leans by following the documentation as accurately as possible. Cave-digger is a game where you have to make your path to the treasure by digging the blocks. You do so by pressing the corresponding keys on your keyboard but be careful about the lava! 
                 In It Leans you have to move your character in order to balance the incoming weights in order not to fall.
                 </p>
-                
             </div>
             
-            <div class="row">
-                <div  class="col">
-                    <img class="card-img myImages" src="/images/WarioWare/WW-CaveDigger-OPTI.jpg" 
-                    data-toggle="tooltip" data-placement="top" title="Version final du jeu" alt="Version final du jeu">
-                </div >
-                <div  class="col">
-                    <img class="card-img myImages" src="/images/WarioWare/WW-ItLeans-OPTI.jpg" 
-                    data-toggle="tooltip" data-placement="top" title="Version final du jeu" alt="Version final du jeu">
-                </div >
-            </div>
             
-            <div class="row">
-                <div class="col sideBySideIframe clear embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/6AlniuDFcls" frameborder="0" allow="accelerometer;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
+        </div>
 
-                <div class="col sideBySideIframe clear embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/oyIqd0Z6zts" frameborder="0" allow="accelerometer;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-            
-            
-            <!--
-            <div class="centerIframe ">
-                <h6 class="text-uppercase font-weight-bold">Download</h6>
-                <p>
-                You can download the game by clicking on link below. (Temporary unavailable)
-                </p>
-                
-                <div class="sideBySideIframe ">
-                    <iframe class="embed-responsive-item" src="https://itch.io/embed/554897?dark=true" height="167" width="552" frameborder="0"><a href="https://promo-gd-2022.itch.io/no-play-no-gain">No Play No Gain by PROMO GD 2022</a></iframe>
-                </div>
-    
-            </div>
-            
-            -->
-
-            <div class="centralText">
-                <h6 class="text-uppercase font-weight-bold">Download</h6>
-                <p>You can download the game by clicking on link below. (Temporary unavailable)</p>
+        <div class="row">
+            <div  class="col-xs-12 col-md-6">
+                <img class="card-img myImages" src="/images/WarioWare/WW-CaveDigger-OPTI.jpg" 
+                data-toggle="tooltip" data-placement="top" title="Version final du jeu" alt="Version final du jeu">
+            </div >
+            <div  class="col-xs-12 col-md-6 pull-right">
+                <img class="card-img myImages" src="/images/WarioWare/WW-ItLeans-OPTI.jpg" 
+                data-toggle="tooltip" data-placement="top" title="Version final du jeu" alt="Version final du jeu">
+            </div >
+        </div>
+        
+        <div class="row">
+            <div class="col-xs-12 col-md-6 embed-responsive embed-responsive-16by9">
+                <iframe  class="embed-responsive-item" src="https://www.youtube.com/embed/6AlniuDFcls" frameborder="0" allowfullscreen></iframe>
             </div>
 
-            <div class= "row">
-                <div class= "col">                   
-                    <a class="btn btn-success nextButton precedentButton" href="/pages/projets/MissionHermes.html">Precedent: Mission Hermes</a>
-                </div> 
-                <div class= "col">                   
-                    <a class="btn btn-success nextButton" href="/pages/projets/GameJamsAndOtherProject.html">Next: Game Jams</a>
-                </div>
+            <div class="col-xs-12 col-md-6 pull-right embed-responsive embed-responsive-16by9">
+                <iframe  class="embed-responsive-item" src="https://www.youtube.com/embed/oyIqd0Z6zts" frameborder="0"  allowfullscreen></iframe>
             </div>
         </div>
 
-                
-    </div> 
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-        <!-- The Close Button -->
-        <span class="close">&times;</span>
-    
-        <!-- Modal Content (The Image) -->
-        <img class="modal-content" id="img01">
-    
-        <!-- Modal Caption (Image Text) -->
-        <div id="caption"></div>
+        <div class= "row">
+            <div class= "col">                   
+                <a class="btn btn-success nextButton precedentButton" href="/pages/projets/MissionHermes.html">← Precedent: Mission Hermes</a>
+            </div> 
+            <div class= "col">                   
+                <a class="btn btn-success nextButton" href="/pages/projets/GameJamsAndOtherProject.html">Next: Game Jams →</a>
+            </div>
+        </div>
+
     </div>
+
 </div>
-<!-- #endregion -->
 
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" id="img01">
+
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption"></div>
+</div>
+
+
+
+
+
+<!-- #endregion content -->
+    
 <!-- #region Footer -->
-<footer class="page-footer">		
-    <div class="text-center">
-        <p> Arthur Chiffoleau © 2020 Copyright / Paris - France / Contact me at <span class="e-mail" data-user="uaeloffihc.a" data-website="moc.ude-akibur"></span></p>      
-    </div>
+<footer class="page-footer">
+	
+	<div class="text-center">
+		<p> Arthur Chiffoleau © 2020 Copyright / Paris - France / Contact me at <span class="e-mail" data-user="uaeloffihc.a" data-website="moc.ude-akibur"></span></p>
+		
+	</div>
 </footer>
-<!-- #endregion -->
+<!-- #endregion footer-->
+	
 
-<!-- Get Script-->
-<script src="/jquery-3.4.1.min.js"></script>
-<script src="/bootstrap/js/bootstrap.min.js"></script>
-<script src="/main.js"></script>
+<!-- Get Script
+<script src="jquery-3.4.1.min.js" async></script>
+<script src="bootstrap/js/bootstrap.min.js" async></script> -->
+<script src="main.js" defer></script>
+<script src="/js/navbar.js"></script>
 </body>
 </html>

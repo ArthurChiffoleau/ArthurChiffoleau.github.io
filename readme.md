@@ -34,3 +34,4 @@ Todo:
 -Trouver une image
 -Prendre des images de madlads et ajouter une descript en V2(voir ci-dessus)
 -Mettre a jour le CV
+-Sur Wario Ware no pain no gain reordonner l'odre vidéo image en version mobile
