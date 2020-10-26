@@ -1,34 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <script src="/jquery-3.4.1.min.js"></script>
-        <script src ="/js/includeHeaderFooter.js"></script>
-        <title>Portfolio</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
-        <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="/main.css">
-        
-        
-    </head>
-    <body>
-        <div id="navbar"></div>
-        <a>En cours</a>
-        <div>
-            <p> Description of the project
+<!-- Header get css-->
+<head>
+    <title>Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/main.css">
+</head>
+    
+<!--Body -->
+<body>
+<!-- #region navigation bar(top) -->
+<nav class="navbar navbar-expand-md fixed-top">
+	<a class="navbar-brand" href="/index.html">ArthurChiffoleau</a>
 
-                Madlads is a mobile strategy game, where you move and use towers to support you minions to fight against the enemy minions.
-                The goal of the game is to make your minions reach the enemy base so they can destroy it while preventing the enemy from doing the same.
-                Your minions are organised in squad of four, you can choose the archetypes that will compose upcomming squads and their route. When they have spawned you cannot control them directly but you can support them with towers that can help them by buffing them, debuff the enemies, make damage to the enemeies or transport them; the tower cannot do any damge to enemy base.
-                The tower are placed on rail and can be move along them to follow the minions (or to transport them), you control 3 or 4 towers. The tower have passive part that work when the tower is in range of targets and part that need an activation from player that unleash diverse ability.
-                The challenges are to compose good squad of minion that will counter the enemy, choose route that will allow minion to encounter enemies at good position, support with the good tower in strategic position and use the ability of the tower effeciently.
-                
-                The project was realised with a team 6 person compound of 3 Arstist and 3 Game Designer
-                In the project I was Game Designer, 
-                </p>
+	<button class="navbar-toggler navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="main-navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span>
+			<img src="/images/icons/three-bars.svg" />
+		</span>
+	</button>
+
+	<div class="collapse navbar-collapse" id="navbar">
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a class="nav-link" href="/index.html">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="/pages/about.html">About</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="/pages/contact.html">Contact</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+<!-- #endregion navbar -->
+
+<!-- #region content -->
+<div class="projectCard rowPadding" style="background-image: url('/images/Madlads/newCover_OPTI.jpg'); ">
+	<div class="overlay"></div>
+    <div class="container align-content-center">
+        <!-- Title-->
+        <div class="row">
+            <div class="col">
+                <h1 class="project-title">Madlads</h1>
+            </div>
         </div>
-        <div id="footer">
+
+        <!--Image and info -->
+        <div class="row">
+            <div class="col">
+                <img class="card-img" src="/images/Madlads/Cover_OPTI.jpg" >
+            </div>
+            <div class="col">
+                <ul>
+                    <li>Video Game</li>
+                    <li>Midcore - Hardcore</li>
+                    <li>Strategy - Action</li>
+                    <li>Solo</li>
+                </ul>
+            </div>
         </div>
-    </body>
+
+        <div class="row">
+            <div class="col">
+                <h6 class="text-uppercase font-weight-bold">PITCH</h6>
+                <p>Madlads is a mobile strategy game, where you move and use towers to support you minions to fight against the enemy minions.
+                The goal of the game is to make your minions reach the enemy base so they can destroy it while preventing the enemy from doing the same.</p>
+
+                <p>Your minions are organised in squad of four, you can choose the archetypes that will compose upcomming squads and their route. When they have spawned you cannot control them directly but you can support them with towers that can help them by buffing them, debuff the enemies, make damage to the enemeies or transport them; the tower cannot do any damge to enemy base.
+                The tower are placed on rail and can be move along them to follow the minions (or to transport them), you control 3 or 4 towers. The tower have passive part that work when the tower is in range of targets and part that need an activation from player that unleash diverse ability.</p>
+
+
+                <p>The challenges are to compose good squad of minion that will counter the enemy, choose route that will allow minion to encounter enemies at good position, support with the good tower in strategic position and use the ability of the tower effeciently.</p>
+            </div>
+        </div>
+
+    </div>
+	
+
+</div>
+
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" id="img01">
+
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption"></div>
+</div>
+
+
+
+
+
+<!-- #endregion content -->
+    
+<!-- #region Footer -->
+<footer class="page-footer">
+	
+	<div class="text-center">
+		<p> Arthur Chiffoleau © 2020 Copyright / Paris - France / Contact me at <span class="e-mail" data-user="uaeloffihc.a" data-website="moc.ude-akibur"></span></p>
+		
+	</div>
+</footer>
+<!-- #endregion footer-->
+	
+
+<!-- Get Script
+<script src="jquery-3.4.1.min.js" async></script>
+<script src="bootstrap/js/bootstrap.min.js" async></script> -->
+<script src="main.js" defer></script>
+<script src="/js/navbar.js"></script>
+</body>
 </html>
