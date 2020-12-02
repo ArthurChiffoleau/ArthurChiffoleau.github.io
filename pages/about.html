@@ -1,84 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!-- Header get css-->
-  <head>
-    <title>About</title>
+<!-- Header get css-->
+<head>
+    <title>Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../main.css">
     <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/main.css">
+    <style>.embed-responsive-210by297 {padding-bottom: 141.42%;} </style>
+</head>
     
-  </head>
-
 <!--Body -->
 <body>
 <!-- #region navigation bar(top) -->
-<div class="imageBackgroundHtmlBody" style="background-image: url('/images/wlp5.jpg');">
-    <div class="overlay"></div>
-    <nav class="navbar navbar-expand-md">
-        <a class="navbar-brand"  href="/index.html">Arthur Chiffoleau</a>
-        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="main-navigation">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="/index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/pages/about.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/pages/contact.html">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <!-- #endregion -->
+<nav class="navbar navbar-expand-md fixed-top">
+	<a class="navbar-brand" href="/index.html">ArthurChiffoleau</a>
+
+	<button class="navbar-toggler navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="main-navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span>
+			<img src="/images/icons/three-bars.svg" />
+		</span>
+	</button>
+
+	<div class="collapse navbar-collapse" id="navbar">
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a class="nav-link" href="/index.html">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="/pages/about.html">About</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="/pages/contact.html">Contact</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+<!-- #endregion navbar -->
+
+<!-- #region content -->
+<div class="projectCard rowPadding somePadding" style="background-image: url('/images/wlp5.jpg'); ">
+	<div class="overlay"></div>
     
-    <!--#region Contenu-->
-    <div class="contact description" >
-        
-        <div class="row justify-content-center espacement">
-            <div class="col-8 ">
-                <p>Link to my Resume (CV) in pdf</p>
-                <a class="btn btn-success" target="_blank" rel="noopener noreferrer" href="/docs/CV_Arthur_Chiffoleau_English_V2.pdf">Arthur Chiffoleau CV (download)</a>
+    <div class="container">
+        <div class="row">
+            <div class="col text-center" style="padding-bottom: 20px;">
+                <p>Link to my Resume (CV) in pdf:</p>
+                <a class="btn btn-success"  target="_blank" rel="noopener noreferrer" href="/docs/CV_ArthurChiffoleauEnglishV3.pdf">Arthur Chiffoleau CV (download in <span style="font-style: italic;">.pdf</span>)</a>
                 
                 
             </div>
         </div>
-        <div class="row justify-content-center">
+        <div class="row">
 
-            <div class="col-8">   
-                <embed src="/docs/CV_Arthur_Chiffoleau_English_V2.pdf" width="700" height="400" 
+            <div class="col embed-responsive embed-responsive-210by297">   
+                <embed class="embed-responsive-item" src="/docs/CV_ArthurChiffoleauEnglishV3.pdf" 
                     type="application/pdf">
             </div>
         </div>
-        
-    </div>
 
-    <div class="centralText">
-        
-    </div>
 
-    <div>
-        
     </div>
-    <!-- #endregion-->
-    
-    <!-- #region Footer -->
-    <footer class="page-footer footerAbout">		
-        <div class="text-center">
-            <p> Arthur Chiffoleau © 2020 Copyright / Paris - France / Contact me at <span class="e-mail" data-user="uaeloffihc.a" data-website="moc.ude-akibur"></span></p>      
-        </div>
-    </footer>
 </div>
-<!-- #endregion -->
+<!-- #endregion content -->
+    
+<!-- #region Footer -->
+<footer class="page-footer">
+	
+	<div class="text-center">
+		<p> Arthur Chiffoleau © 2020 Copyright / Paris - France / Contact me at 
+        <span class="e-mail" data-user="uaeloffihc.a" data-website="moc.ude-akibur"></span>
+    </p>
+		
+	</div>
+</footer>
+<!-- #endregion footer-->
+	
 
-<!-- Get Script-->
-<script src="/jquery-3.4.1.min.js"></script>
-<script src="/bootstrap/js/bootstrap.min.js"></script>
-<script src="/main.js"></script>
+<!-- Get Script
+<script src="jquery-3.4.1.min.js" async></script>
+<script src="bootstrap/js/bootstrap.min.js" async></script> -->
+<script src="/main.js" defer></script>
+<script src="/js/navbar.js"></script>
 </body>
 </html>

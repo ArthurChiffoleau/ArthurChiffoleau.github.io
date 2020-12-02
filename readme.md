@@ -1,7 +1,7 @@
 https://arthurchiffoleau.github.io/
 
-Portfolio made with
-Html with Bootstrap and JQuerry
+Portfolio made with Html with Bootstrap 
+(and JQuerry ?)
 
 **Editor:**
 Visual Studio Code
@@ -33,9 +33,14 @@ Todo:
 
 -Trouver une image
 -Prendre des images de madlads et ajouter une descript en V2(voir ci-dessus)
--Mettre a jour le CV (Changer la date de recherche aà "april 2021")
+-Mettre a jour le CV (Changer la date de recherche aà "april 2021" /)
 -Sur Wario Ware no pain no gain reordonner l'odre vidéo image en version mobile
 
 -Faire en sorte que l'on puisse copier mon e-mail en cliquant de dessus (bouton) + ajouter un feedback (message) pour notifier l'utilisateur + ajouter le curseur en forme de pointer
+
+
+Note case study:
+-Comment rendre mars et terre interressante ?
+-
 
 

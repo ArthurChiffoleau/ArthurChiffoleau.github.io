@@ -1,5 +1,12 @@
 /***About ,contact ,404**/
 
+
+.somePadding{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
 .imageBackgroundHtmlBody {
     background-size: cover;
     background-position: center;
@@ -16,10 +23,10 @@
     width: 100%;
     height: auto;
         
-    /* Set up positioning */
+    /* Set up positioning 
     position: fixed;
     top: 0;
-    left: 0;
+    left: 0;*/
 }
 
 @media screen and (max-width: 1024px) { 
