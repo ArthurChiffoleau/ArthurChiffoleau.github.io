@@ -48,7 +48,21 @@
             <div class="col description">
                 <h1>Contact me</h1>
                 <p>at the following e-mail:</p>
-                <span class="e-mail" data-user="uaeloffihc.a" data-website="moc.ude-akibur"></span>
+				<span class="e-mail" id="myemail" data-user="uaeloffihc.a" data-website="moc.ude-akibur"></span>
+				
+				<div style="padding-bottom: 30px; padding-top: 10px;">	
+					<button class="copyButton" onclick="copyTextToClipboard()" title="CopyToClipboard" >
+						<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" fill="white"><path d="M0 0h24v24H0z" fill="none"/><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+						Copy to clipboard	
+					</button>
+				</div>
+
+				
+				<div class="alert" id="alertbox">
+					<span class="closebtn" onclick="this.parentElement.style.visibility='hidden';">&times;</span> 
+					E-mail copied <strong>Succesfully</strong> !
+				</div>
+				
             </div>
         </div>
         

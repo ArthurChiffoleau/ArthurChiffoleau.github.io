@@ -39,18 +39,6 @@ window.onclick = function(event) {
   }
 };
 
-/*
-//Navbar expand in mobile
-function expandNavbar() {
-  var x = document.getElementById("main-navigation");
-  if (x.className === "navbar") {
-    x.className += " responsive";
-  } else {
-    x.className = "navbar";
-  }
-} */
-
-
 //SLIDESHOW
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -79,4 +67,72 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
+}
+
+function copyEmail() {
+  /* Get the text field */
+  var copyText = document.getElementById("myameil");
+
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 50); /*For mobile devices*/
+
+  /* Copy the text inside the text field */
+  document.execCommand("copy");
+
+  /* Alert the copied text */
+  alert("Copied the text: " + copyText.value);
 } 
+
+
+function copyTextToClipboard() {
+  var textArea = document.createElement("textarea");
+
+  // Place in the top-left corner of screen regardless of scroll position.
+  textArea.style.position = 'fixed';
+  textArea.style.top = 0;
+  textArea.style.left = 0;
+  // Ensure it has a small width and height. Setting to 1px / 1em
+  // doesn't work as this gives a negative w/h on some browsers.
+  textArea.style.width = '2em';
+  textArea.style.height = '2em';
+  // We don't need padding, reducing the size if it does flash render.
+  textArea.style.padding = 0;
+  // Clean up any borders.
+  textArea.style.border = 'none';
+  textArea.style.outline = 'none';
+  textArea.style.boxShadow = 'none';
+  // Avoid flash of the white box if rendered for any reason.
+  textArea.style.background = 'transparent';
+
+  var element = document.getElementById("myemail");
+  if(element !=null)
+  {
+    var name = element.getAttribute("data-user");
+    var domain = element.getAttribute("data-website");
+    var text = reverse(name) + "\u0040" + reverse(domain);
+  }
+  textArea.value = text;
+
+  document.body.appendChild(textArea);
+  textArea.focus();
+  textArea.select();
+
+  try {
+    var successful = document.execCommand('copy');
+    var msg = successful ? 'successful' : 'unsuccessful';
+    console.log('Copying text command was ' + msg );
+  } catch (err) {
+    console.log('Oops, unable to copy');
+  }
+
+  document.body.removeChild(textArea);
+  
+  var getAlert = document.getElementById("alertbox").style.visibility = 'visible';
+  
+
+}
+
+function reverse(s){
+  return s.split("").reverse().join("");
+}

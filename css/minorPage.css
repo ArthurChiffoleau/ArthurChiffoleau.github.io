@@ -43,3 +43,11 @@
         margin-left: -512px;   /* 50% */
     }
 }
+
+.copyButton{
+    visibility: visible;
+}
+
+.copyButton:hover svg{
+    fill: black;
+}
