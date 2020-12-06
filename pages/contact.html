@@ -41,28 +41,43 @@
 <!-- #endregion navbar -->
 
 <!-- #region content -->
-<main role="main" class="projectCard rowPadding somePadding" style="background-image: url('/images/wlp5.jpg'); ">
+<main role="main" class="projectCard rowPadding somePadding  page-container" style="background-image: url('/images/wlp5.jpg'); ">
 	<div class="overlay"></div>
     
-    <div class="container ">
+    <div class="container">
         <div class="row">
             <div class="col description">
-                <h1>Contact me</h1>
-                <p>at the following e-mail:</p>
-				<span class="e-mail" id="myemail" data-user="uaeloffihc.a" data-website="moc.ude-akibur"></span>
+                <h1><strong>Contact me</strong> </h1>
+				<p>at the following e-mail:</p>
 				
-				<div style="padding-bottom: 30px; padding-top: 10px;">	
-					<button class="copyButton" onclick="copyTextToClipboard()" title="CopyToClipboard" >
+				<strong>
+					<span class="e-mail" id="myemail" data-user="uaeloffihc.a" data-website="moc.ude-akibur"></span>
+				</strong>
+				
+				<div style="padding-bottom: 10px; padding-top: 20px;">	
+					<button class="btn btn-primary copyButton" onclick="copyTextToClipboard()" title="CopyToClipboard" >
 						<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" fill="white"><path d="M0 0h24v24H0z" fill="none"/><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
 						Copy to clipboard	
 					</button>
+
+					
+				</div>
+
+				<div style="padding-bottom: 30px; padding-top: 10px;">
+					<A class="btn btn-primary copyButton mailtoButton" HREF="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%61%72%74%68%75%72%63%68%69%66%66%6F%6C%65%61%75%40%72%75%62%69%6B%61%2D%65%64%75%2E%63%6F%6D">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="18px" height="18px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-.4 4.25l-7.07 4.42c-.32.2-.74.2-1.06 0L4.4 8.25c-.25-.16-.4-.43-.4-.72 0-.67.73-1.07 1.3-.72L12 11l6.7-4.19c.57-.35 1.3.05 1.3.72 0 .29-.15.56-.4.72z"/></svg>
+						Mailto link
+					</A>
+				</div>
+					
+				
+
+				<div class="alert" id="alertbox">
+					<span class="closebtn" onclick="this.parentElement.style.visibility='hidden';">&times;</span> 
+					<span>E-mail copied </span> <strong>Succesfully</strong> !
 				</div>
 
 				
-				<div class="alert" id="alertbox">
-					<span class="closebtn" onclick="this.parentElement.style.visibility='hidden';">&times;</span> 
-					E-mail copied <strong>Succesfully</strong> !
-				</div>
 				
             </div>
         </div>
@@ -77,9 +92,11 @@
 
 <!-- #region Footer -->
 <footer class="page-footer">	
-	<div class=" text-center">
+	<div class="text-center">
 		<p> Arthur Chiffoleau © 2020 Copyright / Paris - France / Contact me at 
-			<span class="e-mail" data-user="uaeloffihc.a" data-website="moc.ude-akibur"></span>
+			<A HREF="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%61%72%74%68%75%72%63%68%69%66%66%6F%6C%65%61%75%40%72%75%62%69%6B%61%2D%65%64%75%2E%63%6F%6D">
+				<span class="e-mail" data-user="uaeloffihc.a" data-website="moc.ude-akibur"></span>
+			</A>
 		</p>
 	</div>
 </footer>

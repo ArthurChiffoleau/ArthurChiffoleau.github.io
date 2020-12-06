@@ -13,10 +13,9 @@
 body {
 	
 	padding-top: 3rem;
-	background: rgb(33, 33, 33);
+	background: rgb(34, 34, 34);
 	color: #fff;
 
-	
 	
 }
 
@@ -86,9 +85,22 @@ body {
 	margin-left: 1em !important;
 }
 
+.goto-link:visited {
+	color: black;
+	background-color:#9fad97;
+	border-color: rgb(71, 85, 83);;
+}
+
 .goto-link:hover {
-	color: rgb(179, 175, 175);
+	color: white;
 	background-color: rgb(71, 85, 83);
+	border-color: rgb(71, 85, 83);;
+}
+
+.goto-link:active {
+	color: black;
+	background-color: rgb(230, 127, 43);
+	border-color: rgb(71, 85, 83);;
 }
 /*---Link_end ---*/
 
@@ -98,6 +110,7 @@ body {
 	unicode-bidi: bidi-override;
 	direction: rtl;
 	font-style: italic;
+	white-space: nowrap
 }
 
 .page-footer {
@@ -106,20 +119,21 @@ body {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	
-	position: absolute;
+	
   	bottom: 1rem;
   	width: 100%;
 	height: 2rem; 
-	margin: 0;
 	margin-bottom: 0;
+}
+
+.page-footer a{
+	color: rgb(126, 126, 126);
 }
 
 .page-footer p{
 	margin-bottom: 0;
 	padding-bottom: 10px;
 }
-
-
 
 .footer-copyright {
 	color: rgb(126, 126, 126);
@@ -131,9 +145,6 @@ body {
   	width: 100%;
 }
 /*---Footer_end---*/
-
-
-
 
 /*--- General ---*/
 .centralText{
@@ -159,7 +170,7 @@ body {
 }
 
 .page-container {
-	min-height: 100vh;
+	min-height: 89vh;
 	position: relative;
 }
 
@@ -194,7 +205,7 @@ body {
 .description button {
 	border: 1px solid #6ab446;
 	background: #6ab446;
-	border-radius: 0;
+	
 	color: #fff;
 }
 

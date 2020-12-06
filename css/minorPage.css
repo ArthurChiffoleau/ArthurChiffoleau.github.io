@@ -51,3 +51,15 @@
 .copyButton:hover svg{
     fill: black;
 }
+
+
+.mailtoButton {
+    background-color: rgb(23, 160, 153); 
+    border-color: rgb(23, 160, 153);
+}
+
+.mailtoButton:hover {
+    color: black;
+    background-color: white;
+    border-color: white;
+}
