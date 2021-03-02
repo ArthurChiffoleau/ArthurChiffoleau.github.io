@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Header get css-->
+<head>
+    <title>Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/main.css">
+</head>
+    
+<!--Body -->
+<body>
+<!-- #region navigation bar(top) -->
+<nav class="navbar navbar-expand-md fixed-top">
+	<a class="navbar-brand" href="/index.html">ArthurChiffoleau</a>
+
+	<button class="navbar-toggler navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="main-navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span>
+			<img src="/images/icons/three-bars.svg" />
+		</span>
+	</button>
+
+	<div class="collapse navbar-collapse" id="navbar">
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a class="nav-link" href="/index.html">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="/pages/about.html">About</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="/pages/contact.html">Contact</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+<!-- #endregion navbar -->
+
+<!-- #region content -->
+<div class="projectCard rowPadding" style="background-image: url('/images/Madlads/newCover_OPTI.jpg'); ">
+	<div class="overlay"></div>
+    <div class="container align-content-center">
+        <!-- Title-->
+        <div class="row">
+            <div class="col">
+                <h1 class="project-title">Pinatatane</h1>
+            </div>
+        </div>
+
+        <!--Image and info -->
+        <div class="row">
+            <div class="col">
+                <img class="card-img" src="/images/Madlads/Cover_OPTI.jpg" >
+            </div>
+            <div class="col">
+                <ul>
+                    <li>Video Game</li>
+                    <li>Casuel</li>
+                    <li>Action - Partygame</li>
+                    <li>Multiplayer Online (4 players)</li>
+                    <li>Third Person View</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h6 class="text-uppercase font-weight-bold">PITCH</h6>
+                <p>Pinatatane is a 4 player party game, in wich you embody a Piñata that fight other Piñata in order to have the most candies. </p>
+
+                <p>You move your Piñata using a third-person view and have two abilities; the first is a dash that let you cover distance quickly as well as pushing other players, the second is a shield that make you invicible and make other players who dash on you bounce off away from you.
+                To win you have be the player with most candies at the end of the three minutes round. To Gain candy you can either collect collect them when they spawn periodically in the arena or recolt them when a another player die. When a player hit a cactus or hit a wall with enough velocity they, upon death they drop down 25% of their candies. While dead player cannot pick up candies, are invicible, they can still move but more slowly; after a short period of time they are alive again. Player must use their dash to project other player into wall or cactus (the cactus stun for a short ammount of time) in order to get a chance to pick a part of their candies.
+                </p>
+
+                <p>
+                If the goal to collect candies was the same for the whole project if was not the case for the lasso who for half of the project was the principal mechanic and where the dash was a dodge mechanic. The lasso was rope that a player would launch in front of them and if it touch another player it would allow the thrower to control for a brief period of time the other player and them let them throw him in the direction of their choice.
+                We made several mistakes at this point, the first was to not prototype directly by ourself as designer and let the programmer do it. It was a problem because, they were testing their problematic that is the online features and it was making a lot of sense for them, but for us we were not able to test our design. And if the programmer wanted to let us test our design, it was taking a lot of time due the complexety of online and their inexperience on the subject. While they were working on this, as designers we were to write an exhaustive documentation and trying to improve the desin without having had the opportunity to actually test it. What we should have done is an abstraction and simplification of our gameplay to make quickly a prototype without any online features.
+                It continued for a little while, at some point we have start to be able to test our core gameplay (the lasso) but we were at midpoint in our project. With test we started to discover some major design flaws, the lasso was difficult to aim, it was difficult to control people with it and it was almost imossible to throw someone in wall or cactus reliably. To make things worse, there was some good ammount of lag and a lots of bugs and it was when were playing that we started to understand that not only it would be very difficult to make the feature technically but it would be also complicated to iterate design side. 
+                One things, that was working in the prototype was the dash, so we decided to remove completely the lasso feature and just keep the dash and make it the primary way of pushing other player into obstacle. To make sure things will still be interesting we added the shield as a way to defend ourself and we also added a grapplin as a sort of more riskier and more powerful dash but we end up no making it due to lack of time.
+
+                This major redirection has taken sometime to happen but was a major breath of air for whole team. As we were starting to have the new feature in our porject some new problems start to emerge. One of the most concerning was the difficulty that player were having to touch each other (sound familiar ?), who was leading to a collect playstyle where player would not fight and would go collect candies beacause it the most efficient tatics.
+                To solve this problem we started by making hitbox bigger during the dash of player
+                Making less spawner
+                Adding auto dash
+                Removing death
+                Let poeple move when using shield
+
+                LEVEL DESIGN
+                </p>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/9y5iijTtYcA?rel=0" allowfullscreen></iframe>
+                  </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h6></h6>
+                <p>
+                    
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                 <!-- Slideshow container -->
+                <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="slides slideshowFade">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="/images/Madlads/Screenshot/InGameBattle05.jpg" style="width:100%">
+                        <!--<div class="text">Caption Text</div>-->
+                    </div>
+                
+                    <div class="slides slideshowFade">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="/images/Madlads/Screenshot/InGameBattle03.jpg" style="width:100%">
+                        <!--<div class="text">Caption Two</div> -->
+                    </div>
+                
+                    <div class="slides slideshowFade">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="/images/Madlads/Screenshot/InGameBattle12.jpg" style="width:100%">
+                        <!--<div class="text">Caption Three</div> -->
+                    </div>
+                
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="slideshowDot" onclick="currentSlide(1)"></span>
+                    <span class="slideshowDot" onclick="currentSlide(2)"></span>
+                    <span class="slideshowDot" onclick="currentSlide(3)"></span>
+                </div>
+
+            </div>
+        </div>
+
+        <div class= "row">
+            <div class= "col">                   
+                <a class="btn btn-success nextButton precedentButton" href="/pages/projets/MissionHermes.html">← Previous: Mission Hermes</a>
+            </div> 
+            <div class= "col">                   
+                <a class="btn btn-success nextButton" href="/pages/projets/WarioWareNoPainNoGain.html">Next: Wario Ware →</a>
+            </div>
+        </div>
+
+
+    </div>
+	
+
+</div>
+
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" id="img01">
+
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption"></div>
+</div>
+
+
+
+
+
+<!-- #endregion content -->
+    
+<!-- #region Footer -->
+<footer class="page-footer">
+	
+	<div class="text-center">
+		<p> Arthur Chiffoleau © 2020 Copyright / Paris - France / Contact me at 
+			<A HREF="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%61%72%74%68%75%72%63%68%69%66%66%6F%6C%65%61%75%40%72%75%62%69%6B%61%2D%65%64%75%2E%63%6F%6D">
+				<span class="e-mail" data-user="uaeloffihc.a" data-website="moc.ude-akibur"></span>
+			</A>
+		</p>
+    </p>
+		
+	</div>
+</footer>
+<!-- #endregion footer-->
+	
+
+<!-- Get Script
+<script src="jquery-3.4.1.min.js" async></script>
+<script src="bootstrap/js/bootstrap.min.js" async></script> -->
+<script src="/main.js" defer></script>
+<script src="/js/navbar.js"></script>
+</body>
+</html>
