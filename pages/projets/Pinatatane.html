@@ -61,6 +61,7 @@
                     <li>Action - Partygame</li>
                     <li>Multiplayer Online (4 players)</li>
                     <li>Third Person View</li>
+                    <li>Tools: Unity, Git</li>
                 </ul>
             </div>
         </div>
@@ -68,24 +69,34 @@
         <div class="row">
             <div class="col">
                 <h6 class="text-uppercase font-weight-bold">PITCH</h6>
-                <p>Pinatatane is a 4 player party game, in wich you embody a Piñata that fight other Piñata in order to have the most candies. </p>
+                <p>Pinatatane is a 4 player party game, in which you embody a Pinata that fights other Pinata in order to have the most candies. </p>
 
-                <p>You move your Piñata using a third-person view and have two abilities; the first is a dash that let you cover distance quickly as well as pushing other players, the second is a shield that make you invicible and make other players who dash on you bounce off away from you.
-                To win you have be the player with most candies at the end of the three minutes round. To Gain candy you can either collect collect them when they spawn periodically in the arena or recolt them when a another player die. When a player hit a cactus or hit a wall with enough velocity they, upon death they drop down 25% of their candies. While dead player cannot pick up candies, are invicible, they can still move but more slowly; after a short period of time they are alive again. Player must use their dash to project other player into wall or cactus (the cactus stun for a short ammount of time) in order to get a chance to pick a part of their candies.
+                <p>You move your Pinata using a third-person view and have two abilities; the first is a dash that let you cover distance quickly as well as pushing other players. The second is a shield that makes you invincible and make other players who dash on you bounce off away from you.
+
+                To win you have to be the player with most candies at the end of the three minutes round. To Gain candies you can either collect collect them when they spawn periodically in the arena or pick them up when another player die. When a player hits a cactus or hit a wall with enough velocity they, upon death they drop down 25% of their candies. While dead, player cannot pick up candies, are invincible, they can still move, but more slowly; after a short period of time they are alive again. Player must use their dash to project other player into wall or cactus (the cactus stun for a short amount of time) in order to get a chance to pick a part of their candies.
                 </p>
 
                 <p>
                 Wandering and difficulties
 
-                If the goal to collect candies was the same for the whole project if was not the case for the lasso who for half of the project was the principal mechanic and where the dash was a dodge mechanic. The lasso was rope that a player would launch in front of them and if it touch another player it would allow the thrower to control for a brief period of time the other player and them let them throw him in the direction of their choice.
-                We made several mistakes at this point, the first was to not prototype directly by ourself as designer and let the programmer do it. It was a problem because, they were testing their problematic that is the online features and it was making a lot of sense for them, but for us we were not able to test our design. And if the programmer wanted to let us test our design, it was taking a lot of time due the complexety of online and their inexperience on the subject. While they were working on this, as designers we were to write an exhaustive documentation and trying to improve the desin without having had the opportunity to actually test it. What we should have done is an abstraction and simplification of our gameplay to make quickly a prototype without any online features.
-                It continued for a little while, at some point we have start to be able to test our core gameplay (the lasso) but we were at midpoint in our project. With test we started to discover some major design flaws, the lasso was difficult to aim, it was difficult to control people with it and it was almost imossible to throw someone in wall or cactus reliably. To make things worse, there was some good ammount of lag and a lots of bugs and it was when were playing that we started to understand that not only it would be very difficult to make the feature technically but it would be also complicated to iterate design side. 
-                One things, that was working in the prototype was the dash, so we decided to remove completely the lasso feature and just keep the dash and make it the primary way of pushing other player into obstacle. To make sure things will still be interesting we added the shield as a way to defend ourself and we also added a grapplin as a sort of more riskier and more powerful dash but we end up no making it due to lack of time.
+                If the goal to collect candies was the same for the whole project it was not the case for the lasso. The lasso was the core mechanic and where the dash was a dodge mechanic for half of the project. The lasso was a rope that a player would launch in front of them. If it lands on an enemy, it would allow to control it for a brief period of time. And then to throw it in one the four direction.
 
-                This major redirection has taken sometime to happen but was a major breath of air for whole team. As we were starting to have the new feature in our porject some new problems start to emerge. One of the most concerning was the difficulty that player were having to touch each other (sound familiar ?), who was leading to a collect playstyle where player would not fight and would go collect candies beacause it the most efficient tatics.
-                To solve this problem we started by making hitbox bigger during the dash of player, but he turned out if it increase the chance of touching another player it also increase the chance of people dashing into obstacle espacilly cactus, who would kill themself by repeatedly dash into cactus emphasing even more the collect playstyle.
-                Finally the solution that we found was to put an aimbot on the dash, so that if another player is in front of yout character in a cone and it will automaticly dash into the other player and we manage to do it so that most people don't perceive it.
-                About the same time we also make important decision to make people fight more, the first was to change the way how death work, at first we were with a system of life point and respawn point then we change to a system where you have no life point and everytime you hit something with enough velocity you die, a death only mean that you are slow down and can't pick candies. The second things was to make people use the shield more and was very simple, we have the rule that when you use the shield it would stop you, we just have remove this rule to make it more dynamic and incite people to use it more.
+                We made several mistakes at this point, the first was to not prototype directly by ourselves as designer and let the programmer do it. It was a problem because, they were testing their problematic like online features, but not our design. It seems obvious in retrospective, but we should have made some paper prototype or transpose the game in 2D to prototype it.
+                Instead of prototyping we were doing exhaustive documentation and trying to improve the design without having had the opportunity to actually test it.
+
+                When finally have a working prototype it was almost mid-project. And started to discover some major design flaws by testing it. The lasso was difficult to aim, it was difficult to control people with it and it was almost impossible to throw someone in a wall or in a cactus reliably. Some lags and bugs were not helping it either, but more important we start to discover that it would be very difficult to make it work technically. With the time remaining, the technical and design problems it was not wise to keep it, so we decided to cut it.
+                Since the dash was working we decided to make it the way to push enemies in obstacle. We also added the shield as way to defend ourselves against the dash. We were intending to put a grappling to keep part of the previous work, but we end up cutting it.
+
+                This major redirection has taken sometime to happen, but was a major breath of air for whole team. As we were starting to have the new feature in our project some new problems start to emerge. One of the most concerning was the difficulty that players were having to touch each other. Who was leading to a collect play-style where player would not fight and would go collect candies because it was the most efficient tactics.
+                To solve this problem we started by making hitbox bigger during the dash of player. It was increasing the chance of touching another player but also the chance of people dashing into obstacle especially cactus. Making people kill themselves by repeatedly dashing into cactus, emphasizing even more the collect play-style.
+
+                Finally the solution that we found was to put an aimbot on the dash. It was so that if another player is a cone in front of your character, it will automatically dash into him. We manage to do it so that most people were not able to perceive it.
+
+                About the same time we also make important decisions to make people fight more. The first decision was to change the way that death work, at first we were with a system of life point and respawn point. And we change it to a system where you have no life point and every time you hit something with enough velocity you die. Death only mean that you are slow down and can't pick candies.
+
+                The second thing was to make people use the shield more and was very simple, we allowed people to move while using the shield. It was way more dynamic and incite people to use it more since it was more powerful.
+
+                With a few more tweaks and we were at the end. Players were founding the game fun to play and I am proud of this project.
 
                 
                 </p>
@@ -93,20 +104,15 @@
                 <p>
                 LEVEL DESIGN
 
-                I was in charge of the level design so my mission was to design arena in wich the player will be fighting. SInce it was a game about Piñata who are a mexican tradition, I decided to look some reference in architecture of Mexico over their history and to use Google street view to see how their city are constructed and how their real town look like. With these inspiration, I to make a map thta will happen at one road who join the other and where it form cosy plazza. Then I have think how I want players to move in the arena and decided to make them move along a circle with so side-path at the center. 
+                I was in charge of the level design so my mission was to design arena in which the player will be fighting. The game is about Pinata who are a Mexican tradition. So I decided, to look some reference in the architecture of Mexico over their history and to use "Google Street view" to see how their city are constructed and looked like. With these inspiration, I decided to make a map that will happen at one road who joins another and where it forms cozy plaza. Then, I thought how I want players to move in the arena and decided to make them move along a circle with so side-path at the center.
 
-                Fill it with cactus
+                After the redirection of the project, we decided to keep the map and just adjust it.
 
-                Feedback that too munch cactus
+                At some point we realized that collect playstyle was also coming from map. Firstly, I was using a lot candies spawner so there will was always a place where the player can go to collect candies. It was distracting player and was an incentive to go collect these candies. So we decided, to only put three spawners at the important place and to have only one active at time to push player to fight.
 
-                Expansion of the map with some new side-path
+                Secondly, there was too much cactus, causing people to be afraid to dash. By reducing and reducing the cactus to the core places, people we more confident and aggressive, like we wanted to.
 
-                Addition of candy spawn
-
-                Refocus of map around 3 points (remove side path)+ new path
-
-                Bigger center and spawn at the center
-
+                It was at that time I was refocusing the map around this point making them three battlegrounds and removing distracting side-path. I also start using the roads as way of guiding player in the arena instead of putting them for the lore. I also change the center to change it from a side-path to a main path and bring the attention on it. And finally I make sure that there would be some pauses in the spawn of candies so player have time to fight and chase each other.
 
 
                 </p>
