@@ -71,6 +71,16 @@
 	padding-left: 10em;
 	padding-right: 10em;*/
 }
+
+.imageZoom{
+	background-size: 100%;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.imageZoom:hover{
+	background-size: 105%; 
+}
 /*--Content_end--*/
 
 /*---project specific---*/
