@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <!--HEAD-->
+  <head>
+    <title>Arthur Chiffoleau - Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="/css/main.css" rel="stylesheet"/>
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
+
+    <meta name="robots" content="noindex"> <!-- No robots !-->
+
+    <meta name="description" content="Arthur Chiffoleau - Portfolio">
+    <meta name="keywords" content="Arthur Chiffoleau, Portfolio, Hermes, Madlads, Pinatatane">
+    <meta name="author" content="Arthur Chiffoleau">
+    <meta name="copyright" content="Arthur Chiffoleau">
+</head>
+  <body class="flex flex-col min-h-screen bg-[#1e1e1e]">
+    <!--NAVBAR/HEADER-->
+    <nav class="sticky top-0 z-50 bg-[#404040ec]">
+      <header class="  p-2 shadow-lg h-12 font-sans backdrop-blur-xl">
+  
+  <div class="flex justify-between">
+    <div>
+      <a class="inline-flex items-center" href="/" target="_self"> 
+        <p class="font-brand text-3xl sm:text-2xl text-white hover:text-rose-400">
+          Arthur
+          <span class="">Chiffoleau</span>
+        </p>
+      </a>
+    </div>
+    <div class="hidden md:flex items-center justify-evenly">
+
+      <div class="px-2">
+        <a class="text-white visited:text-slate-300 hover:text-orange-300" href="/">
+          <p>WORK</p>
+        </a>
+      </div>
+
+      <div class="px-2">
+        <a class="text-white visited:text-slate-300 hover:text-orange-300" href="/pages/AboutMe">
+          <p>ABOUT ME</p>
+        </a> 
+      </div>
+
+      <div class="px-2">
+        <a class="text-white visited:text-slate-300 hover:text-orange-300" href="/pages/Contact">
+          <p>CONTACT</p>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Mobile menu button -->
+    <div class="md:hidden flex items-center">
+      <button class="outline-none mobile-menu-button">
+      <svg class=" w-6 h-6 text-gray-500 hover:text-green-500 "
+      x-show="!showMenu"
+      fill="none"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      viewBox="0 0 24 24"
+      stroke="currentColor">
+      <path d="M13 17.5H0.25V14.6667H13V17.5ZM25.75 10.4167H0.25V7.58333H25.75V10.4167ZM25.75 3.33333H13V0.5H25.75V3.33333Z" fill="white"/>
+      </svg>
+    </button>
+    </div>
+      
+  </div>
+
+  <!-- mobile menu -->
+  <div class="hidden mobile-menu bg-[#404040ec]">
+    <ul class="">
+      <li class="active"><a href="/" class="block text-sm px-2 py-4 hover:bg-slate-500 font-semibold">Work</a></li>
+      <li><a href="/pages/aboutMe" class="block text-sm px-2 py-4 hover:bg-slate-500 ">About Me</a></li>
+      <li><a href="/pages/contact" class="block text-sm px-2 py-4 hover:bg-slate-500  ">Contact</a></li>
+    </ul>
+    <hr class="border-[#404040] mx-8">
+  </div>
+
+  <script>
+    const btn = document.querySelector("button.mobile-menu-button");
+    const menu = document.querySelector(".mobile-menu");
+
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
+  
+</header>
+    </nav>
+    <!--end NAVBAR/HEADER-->
+    <main class="flex-grow">
+      <!--Start page CONTENT-->
+      
+<div class="mx-auto max-w-3xl text-center">
+    <h1 class="text-center">404 error</h1>
+<p class="text-center"> the page you are searching for do not seems to exist </p>
+<p><a href="/" target="_self" class="text-center"> Go back to the main page </a></p>
+
+</div>
+      <!--End page CONTENT-->
+    </main>
+    <!--FOOTER-->
+    <footer class="bg-[#1e1e1e] ">
+      <hr class="border-[#404040] mx-8">
+      <div class=" ">
+  
+  <div class="text-center pt-1  ">
+    <p class=""> Site and layout made by Arthur Chiffoleau / Paris - France / Contact me at 
+        <a class="text-orange-300" HREF="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%61%72%74%68%75%72%63%68%69%66%66%6F%6C%65%61%75%40%72%75%62%69%6B%61%2D%65%64%75%2E%63%6F%6D">
+            <span class="courrier-electronique" data-user="uaeloffihc.a" data-website="moc.ude-akibur"></span>
+        </a>
+    </p>      
+  </div>
+
+</div>
+    </footer>
+  </body>
+</html>
+   
