@@ -1,6 +1,6 @@
 ---
 permalink: false
-title: Suite office
+title: Office Suite
 tags: software
 ---
 

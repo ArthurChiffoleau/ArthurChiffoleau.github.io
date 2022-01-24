@@ -1,6 +1,6 @@
 ---
 permalink: false
-title: Suite adobe
+title: Adobe suite
 tags: software
 ---
 
