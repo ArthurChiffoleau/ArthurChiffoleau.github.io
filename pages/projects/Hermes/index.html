@@ -128,33 +128,54 @@ background-repeat: no-repeat;" >
                 <p class="font-sans text-2xl md:text-3xl lg:text-4xl  mb-14 font-bold bg-clip-text text-transparent bg-gradient-to-t from-orange-500 to-yellow-500 py-2">Hermes</p>
                 <div class="text-blog-formatting md:mx-10">
                     <p><strong><strong>[Work in progress]</strong></strong></p>
-<p>I am currently working on Hermes, it's a plane game in wich you explore the world and you try escape a mysterious cataclysm. You fly from island to island while trying to understand the origin of cataclysm and maybe fight back.</p>
+<p><img src="/images/Hermes/concept_LD_1_Hermes.png" alt="Artwork"></p>
+<p>I am currently working on Hermes, it's a plane game in which you explore the world and you try to escape a mysterious cataclysm. You fly from island to island while trying to understand the origin of cataclysm and maybe fight back.</p>
 <p>I am working as Game Designer and Level designer, if at this time my main jobs is to think/write documentation about different feature related to the plane, tweak settings of the plane and doing part of the level design.</p>
+<p><img src="/images/Hermes/HighresScreenshot00003(1).png" alt="Image of game"></p>
 <h2>Economy</h2>
 <p>At first there was an economic part in the game, the player was a merchant that would land on an island and will buy and sell merchandises.
 I was in charge of designing the economic system to create a fun and engaging merchant experience that would complement the fly experience.</p>
+<p>At first, I come up with the simplest system, that was the player can buy and sell with money different resource at different price on each island. As it is the base of the current economic system, I was thinking it could be an interesting system where the player will find his fun in trying to get richer and richer through multiple trade.</p>
+<h3>First prototype</h3>
+<p>Knowing it was probably too good to be really work, I decided to create a small python prototype that would test this idea.</p>
+<p><img src="/images/Hermes/python_9BPtsY9RkL.png" alt="Image du prototype python">
+<em>Screen of my python prototype</em></p>
+<p>When testing the prototype I start to realize multiple things, firstly in order for the system to be interesting the player would have to make a lot of trade.
+Secondly, even in the case of the player going from island to island and trading for an extended period of time, it wasn't very fun. Remembering resources price was hard (I was testing with 10 different resource on each island), making profit was easy once you see something cheap, and you find somewhere to sell at better price, you could basically loop between the two island and have infinite money.</p>
+<p>To sum-up my problems, the player was lacking information to engage with the system, the system was easily fooled, and the system was stagnant making it boring to engage with.</p>
+<p>To solving these problems, I begin to look for reference of games where you can play as merchant and found multiple interesting insight.</p>
+<h3>Merchant games</h3>
+<p>There is very few game that only focus on the merchant</p>
+<p>/ ///  mercheant game analysis /// /</p>
 <ul>
-<li>Chercher quel sont nos spécification</li>
-<li>Création d'un prototype</li>
-<li>Premier lot de problèmes (Stagnation, intérêt de vente)</li>
-<li>Comment les résoudre</li>
 <li>Chercher des référence, comment marche les système</li>
 <li>Première mise en place des systèmes</li>
 <li>Nouvelle recherche des concept économique</li>
 </ul>
 <h2>A big change</h2>
-<p>In the end we decided to cut the whole economic part, the main reason was time. We are doing this as part of school project and will have jury that will play our for a maximum of 30 minutes. Making a plane alongside a merchant game will be very hard because learning the merchant take quite some time and there no point in making an hypothetic experience that will never be play.</p>
-<p>By making this hard decision we will be hopefully able to make a better plane game that will deliver a strong experience.</p>
-<h2>Controller</h2>
-<ul>
-<li>Lot of thing learn</li>
-<li>Diable dans les détails</li>
-<li>Bien avoir une référence</li>
-<li>Avoir des objectifs clair</li>
-<li>Tester dans des conditions proche du relle (art et niveau)</li>
-<li>Itérer</li>
-</ul>
+<p>In the end we decided to cut the whole economic part, the main reason was time. We are doing this as part of a school project and will have a jury that will play our prototype for a maximum of 30 minutes. Making a plane alongside a merchant game will be very hard because learning the merchant take quite some time and there is no point in making a hypothetical experience that will never be play.</p>
+<p>By making this hard decision, we will be hopefully able to make a better plane game that will deliver a strong experience.</p>
+<h2>Working on the controller</h2>
+<p>While I was already working on the controller before, the end of trade part of the game and the decision to focus our game about the fly experience mean that I was able more than ever to focus on the controller.</p>
+<p>Making a player controller is a daunting and hard task, at first when I have heard that some indie developer have spent 1 years making a controller before making anything else it was very surprise now that I am part of making one, it seems almost normal.</p>
+<p><img src="/images/Hermes/TheCrew2.jpg" alt="the crew 2">
+<em>The crew 2 our main reference</em></p>
+<p><img src="/images/Hermes/AceCombat7.jpg" alt="ace combat 7">
+<em>Ace combat 7 one of our secondary reference</em></p>
+<p>Once again, the things that have help us to make a controller was having references. Playing references and trying to understand every detail was very important, because when making, it's easy to get lost and be unsure about to improve the controller. Being able to understand the details in a great controller and their impact on the experience and emotion of the player seem definitely the way to go.</p>
+<p>While we have pretty quickly understand the importance to have game reference, it was only later that we understand the importance of the &quot;real reference&quot; in our case the plane. How a plane works was a question that I gave a satisfying answer too late and should have been the first one I am asking myself.</p>
+<img class="bg-gray-400" src="/images/Hermes/Aeroforces.png" />
+<p><em>For example the forces on a airfoil, image from wikipedia</em></p>
+<p>In the future if I work again on a controller whether it's human, a car or spaceship understanding its inner working help you conceptualize what should you be simulating, how and what you shouldn't be simulating.</p>
+<h3>the big change again</h3>
+<p>Before the &quot;big change&quot; we were going for a semi-realist semi-arcade plane, with cut of the economic part we also decided to make a full arcade plane. This decision was motivated by the fact that doing focusing the game on fly we would need challenges in form of obstacles avoidance and having an agile and unrealistic plane will help us accomplish this goal.</p>
+<h3>Some few more lessons learned</h3>
+<p>The last thing I have learned, is to test and tweak your controller in real conditions. At first, we were testing and tweaking our controller in a scene with only cube and no art, without any FX, with wrong plane model. That resulted in all sort of problems, whether it was our plane going seemingly slow when it was in reality going at match speed. We were able to fix it, for example with some VFX (trails and speed lines), by making sure we are having a good scale and by having element of varying size (so that things move past you and give impression of speed).</p>
+<p>Controller collaboration is a real key component, so you have to make sure that you are working with everybody and as soon as possible on a common controller that include everything and his test in the most real condition possible.</p>
+<h2>Endwords</h2>
+<p>This is the end for now ! I am sure I will keep learning a lot more on this amazing project with amazing people !</p>
 <p>I hope you are interested in our project Hermes, we will finish our 30 minutes demo for end of June, so stay tuned !</p>
+<p><img src="/images/Hermes/HighresScreenshot00002.png" alt="tornado"></p>
 
                 </div>
             </div>
