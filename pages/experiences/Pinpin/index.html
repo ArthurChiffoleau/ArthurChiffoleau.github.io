@@ -128,18 +128,42 @@ background-repeat: no-repeat;" >
                 <p class="font-sans text-2xl md:text-3xl lg:text-4xl  mb-14 font-bold bg-clip-text text-transparent bg-gradient-to-t from-orange-500 to-yellow-500 py-2">Tribal idle</p>
                 <div class="text-blog-formatting md:mx-10">
                     <p>[Work in progress]</p>
-<p>I have done a four months internship at Pinpin team a entreprise specialized in hyper-casual and casual games. I was working on Tribal game an upcomming Idle game as Economic designer.</p>
-<p>My two main mission we to balance the 32 heroes and to balance the macro economy.</p>
+<p><img src="/images/Pinpin/MARKETING_ILLU5.png" alt="Artwork"></p>
+<p>I have done a four months internship at &quot;Pinpin team&quot; an enterprise specialized in hyper-casual and casual games. I was working on Tribal idle, an upcoming Idle game on mobile, as Economic designer.</p>
+<p>My two main mission we to balance the 32 heroes and to balance the macroeconomy.</p>
+<h2>Quick presentation</h2>
+<p>Tribal Idle is a game where you fight increasingly difficult enemies with heroes. You start by selecting the heroes for the next fight and equipping with items, then you give them a position on the board, then you ready to launch the fight. When the fight have start, your heroes move and attack automatically. You can only trigger the special ability of each hero, the effect of  each skill can turn the combat around if timed right.
+It's similar to the mobile game AFK Arena, if you are familiar with it.</p>
+<p><img src="/images/Pinpin/Combat.gif" alt="Screen in Game">
+<em>Gif of combat</em></p>
 <h2>Balancing of heroes</h2>
+<p>My first mission was to balance all the heroes in the game, each hero have 16 statistics and two abilities, one passive ability and one that can be activated by the player.
+Before my arrival they already make the different heroes, their visual, their identity and there were in the process of implementing them especially their different ability.</p>
 <h3>Balancing of stats</h3>
+<p>I was advised to start by coming up for the different value for each stat. I started by coaming for each stat one by one by reading the description of each hero and trying to come up with some statistics for each hero. It wasn't a good way of doing things, it was a bit random, was very hard to modify and there wasn't any class identity.</p>
+<p>I immediately try to use a better way that was creating one archetype for each class of heroes, than using coefficient to modify heroes belonging to this class. It seems better but since it was only ideas I didn't have any way to know sure, so I decided that it was time to confront to the reality. For some logistic reason I didn't have access to the project, so in order to be able to have a first test I decided to put a small combat simulation in Python.</p>
+<p><img src="/images/Pinpin/SimulationDeCombat.png" alt="Screen of simulation">
+<em>My python simulation</em></p>
+<p>My python simulation was able to simulate combat between two team of heroes, give the logs of the combat and the winner. With my python program, I was able to start to fix most broken class and heroes and adjust the time of an average match. But soon I was faced  with a big problem, how can I know what composition will be used ? And what composition should I test ? Even I could imagine a classic composition that the player could use, there was no way to know for sure. So I have tried to see if I could simulate every possibility, I know this is in no way perfect solution, but better than nothing, so I decided to give a try.</p>
+<p>After some quick math I realized that simulating every possibility for each hero was requiring me to simulate 7^10 different combats and technical reasons (time to compute, ram needed, and hard drive space required) were making this hard, so I decided to only do the simulation with my class archetypes and that would only require me to simulate 31 878 different combats.</p>
+<p><img src="/images/Pinpin/MatchupClassVsClassWithSimulation.png" alt="Result of the simulation percentage of victory">
+<em>percentage of victory for each class (later version)</em></p>
+<p>With this percentage I was able to make a few adjustement but</p>
 <ul>
-<li>creation of a simulation</li>
-<li></li>
+<li>Access of unity</li>
+<li>Creation of a scene to test heroes</li>
+<li>New way of doing stats</li>
 </ul>
 <h3>Balencing of capacity</h3>
 <ul>
+<li>First value</li>
 <li>Integration</li>
+<li>Developement of tool that get stats on the last combat</li>
 </ul>
+<h2>Macroeconomy</h2>
+<h2>Conclusion</h2>
+<p>One of most important thing of balancing is to being able test with outside playtester but due to external reason, it was not possible and so I was not able to get my hand on player data. I would have stay longer I would have done my possible to do so [... a completer]
+There is difference between what is mathemacly the best what is going to be use by the player</p>
 
                 </div>
             </div>
