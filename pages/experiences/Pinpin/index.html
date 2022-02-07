@@ -142,6 +142,8 @@ Before my arrival they already make the different heroes, their visual, their id
 <h3>Balancing of stats</h3>
 <p>I was advised to start by coming up for the different value for each stat. I started by coaming for each stat one by one by reading the description of each hero and trying to come up with some statistics for each hero. It wasn't a good way of doing things, it was a bit random, was very hard to modify and there wasn't any class identity.</p>
 <p>I immediately try to use a better way that was creating one archetype for each class of heroes, than using coefficient to modify heroes belonging to this class. It seems better but since it was only ideas I didn't have any way to know sure, so I decided that it was time to confront to the reality. For some logistic reason I didn't have access to the project, so in order to be able to have a first test I decided to put a small combat simulation in Python.</p>
+<p><img src="/images/Pinpin/secondWayOfHandlingStats.png" alt="second way of doing stats">
+<em>Part of my second spreadsheat for doing statistics</em></p>
 <p><img src="/images/Pinpin/SimulationDeCombat.png" alt="Screen of simulation">
 <em>My python simulation</em></p>
 <p>My python simulation was able to simulate combat between two team of heroes, give the logs of the combat and the winner. With my python program, I was able to start to fix most broken class and heroes and adjust the time of an average match. But soon I was faced  with a big problem, how can I know what composition will be used ? And what composition should I test ? Even I could imagine a classic composition that the player could use, there was no way to know for sure. So I have tried to see if I could simulate every possibility, I know this is in no way perfect solution, but better than nothing, so I decided to give a try.</p>
@@ -154,22 +156,30 @@ Before my arrival they already make the different heroes, their visual, their id
 <p>So I have try using a new system that use a in wich for each statistic we assign a value for a scale of word and then for each stat of each hero we assign a word.</p>
 <p><img src="/images/Pinpin/scales.png" alt="Scales"></p>
 <p><img src="/images/Pinpin/words.png" alt="Words"></p>
-<p>This system is easyier because you can esaily do modifcation to one stat of every heroes without breaking balancing as you don't need to modify the word but only the value of the scale.</p>
+<p>This system is easier because you can eassily do modifcations to one stat of every heroes without breaking balancing as you don't need to modify the word but only the value of the scale.</p>
 <p>But the most important thing that this systme do, is to enforce intentionnality.</p>
-<p>When dealing with nomber it quickly become hard to know what they mean, for exemple is 600 health good ? Not necessary, if every other hearoes has 1 200 health it's probably pretty bad. But if every heroes was having 200 health would very good. By using words and scale, we can focus on the number when making the scale and then when balencing a heroes we only have to think whether a particalar stat is good, bad or in between.</p>
-<p>The only problem with this system</p>
-<p>Problem -&gt; need enforce class on my own -&gt; combining thhis  with second system</p>
+<p>When dealing with nomber it quickly become hard to know what they mean, for exemple is 600 health good ? Not necessary, if every other hearoes has 1 200 health it's probably pretty bad. But if every heroes was having 200 health it would very good. By using words and scale, we can focus on the number when making the scale and then when balencing a heroes we only have to think whether a particalar stat is good, bad or in between.</p>
+<p><img src="/images/Pinpin/ClassInteraction.jpg" alt="Classes"></p>
+<p>The only problem with this system was I have monitor that the different unit were staying true to the class myself and not by default.
+In restropective, I should have combined this system with the second system when derived unit from a class archetype.</p>
+<p>Even with this problem, it's was probably the best system I have done because everytime I have needed to make modifications of heroes stat it was fast and easy to do so.</p>
 <h3>Balencing of capacity</h3>
-<ul>
-<li>First value</li>
-<li>Integration</li>
-<li>Developement of tool that get stats on the last combat</li>
-</ul>
+<p>After having done the statistics of heroes I started doing the capacities, it was much harder task to do because it was harder to compare capacities between them and it was hard to integrate.</p>
+<p>I have opt for a system where for each capacity I was determing whate were the different variable that were important to capacity, to be able to tweak them easily and then I was doing some small calculation to get some insights (calculating dps according to damge stat of the heroes, time to launch capacity, ...).</p>
+<p><img src="/images/Pinpin/Capacities.png" alt="Capacities">
+<em>Part of my spreadsheet for balancing capacities</em></p>
+<p>When tweaking the values of the system I was face with a problem, as I was trying to balance the different capacity it was hard to know what each hero was doing for their team. While I could have just tested one hero against one hero, I have already learned the hard way, that 1 vs 1 combat were not representative of 5 vs 5 fight (the most common situation, aside from the tutorial) and that it was way better to test how good was performing a hero in a team than alone.</p>
+<p>So i decided to to do a little tool that would track how good was performing a hero in afight (damage, heal, ...) each hero was doing during the fight.</p>
+<p><img src="/images/Pinpin/statisticTable.png" alt="A little table that would sumarize stats of the last fight"></p>
+<p><em>A little table that would sumarize stats of the last figh</em></p>
+<p>This have considerably help me to balance the different capacities of each hero and this have gave me an opportunity to further tweak the statistics of each heroes.</p>
+<p>To be frank the system to balance the capacity was not great, while at the end the system was 95% automatic it was not great system because it was tidious to get working, then it was not flexible and a bit hard to balance. Hopefully the fact this was stil not too slow (due to being automatic) and the
+I was hoping to change it but I started to run out of time and decided was probably better to have everything rough rather than missing part of values for the game that could deny the ability to test the game properly.</p>
 <h2>Macroeconomy</h2>
 <p>(Coming soon)</p>
 <h2>Conclusion</h2>
 <p>One of most important thing of balancing is to being able test with outside playtester but due to external reason, it was not possible and so I was not able to get my hand on player data. I would have stay longer I would have done my possible to do so [... a completer]
-There is difference between what is mathemacly the best what is going to be use by the player.</p>
+There is difference between what is mathematicly the best what is going to be use by the player.</p>
 <h2>Bonus</h2>
 <p><img src="/images/Pinpin/Playfab_CharacterDrop.png" alt="Playfab">
 <em>We were using playfab that was allow us to store values that the player would get every time they start the app, here the drop value of each character</em></p>
