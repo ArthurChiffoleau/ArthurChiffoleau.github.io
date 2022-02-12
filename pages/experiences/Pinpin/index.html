@@ -128,10 +128,10 @@ background-repeat: no-repeat;" >
                 <p class="font-sans text-2xl md:text-3xl lg:text-4xl  mb-14 font-bold bg-clip-text text-transparent bg-gradient-to-t from-orange-500 to-yellow-500 py-2">Tribal idle</p>
                 <div class="text-blog-formatting md:mx-10">
                     <p><img src="/images/Pinpin/MARKETING_ILLU5.png" alt="Artwork"></p>
-<p>I have done a four months internship at &quot;Pinpin team&quot; an enterprise specialized in hyper-casual and casual games. I was working on Tribal idle, an upcoming Idle game on mobile, as Economic designer.</p>
+<p>I have done a four months internship at &quot;Pinpin team&quot; an enterprise specialized in hyper-casual and casual mobile games. I was working on Tribal idle, an upcoming Idle game on mobile, as Economic designer.</p>
 <p>My two main mission we to balance the 32 heroes and to balance the macroeconomy.</p>
 <blockquote>
-<p>Note: From now on I will be referring to balance as the act of finding the most suited number for having the best experience in-game</p>
+<p>Note: From now on I will be referring to balance as the act of finding the most suited numbers (for exemple how much life have enemies and how much damage deal a capacity...) for having the best experience in-game</p>
 </blockquote>
 <h2>Quick presentation</h2>
 <p>Tribal Idle is a game where you fight increasingly difficult enemies with heroes. You start by selecting the heroes for the next fight and equipping with items, then you give them a position on the board, then you ready to launch the fight. When the fight have start, your heroes move and attack automatically. You can only trigger the special ability of each hero, the effect of each skill can turn the combat around if timed right.
@@ -140,10 +140,10 @@ It's similar to the mobile game AFK Arena, if you are familiar with it.</p>
 <em>Gif of combat</em></p>
 <h2>Balancing of heroes</h2>
 <p>My first mission was to balance all the heroes in the game, each hero have 16 statistics (attack, defense, energy there are attribute onto we associate a value) and two abilities, one passive ability and one that can be activated by the player.
-Before my arrival they already make the different heroes, their visual, their identity and there were in the process of implementing them especially their different ability.</p>
+Before my arrival they already make the different heroes, their visual, their identity and there were in the process of implementing them, especially their different ability.</p>
 <h3>Balancing of stats</h3>
 <p>I was advised to start by coming up for the different value for each stat. I started by coming for each stat one by one, reading the description of each hero and trying to come up with some statistics for each hero. It wasn't a good way of doing things, it was a bit random, was very hard to modify and there wasn't any class identity.</p>
-<p>I immediately try to use a better way that was creating one archetype for each class of heroes, than using coefficient to modify heroes belonging to this class. It seems better but since it was only ideas I didn't have any way to know sure, so I decided that it was time to confront to the reality. For some logistic reason I didn't have access to the project, so in order to be able to have a first test I decided to put a small combat simulation in Python.</p>
+<p>I immediately try to use a better way that was creating one archetype for each class of heroes, and then using coefficient to modify heroes belonging to this class. It seems better, but since it was only ideas I didn't have any way to know sure, so I decided that it was time to confront it to the reality. For some logistic reason I didn't have access to the project, so in order to be able to have a first test I decided to put a small combat simulation in Python.</p>
 <p><img src="/images/Pinpin/secondWayOfHandlingStats.png" alt="Second way of doing stats">
 <em>Part of my second spreadsheat for doing statistics</em></p>
 <p><img src="/images/Pinpin/SimulationDeCombat.png" alt="Screen of simulation">
@@ -151,16 +151,16 @@ Before my arrival they already make the different heroes, their visual, their id
 <p>My python simulation was able to simulate combat between two team of heroes, give the logs of the combat and the winner. With my python program, I was able to start to fix most broken class and heroes and adjust the time of an average match. But soon I was faced with a big problem, how can I know what composition will be used ? And what composition should I test ? Even I could imagine a classic composition that the player could use, there was no way to know for sure. So I have tried to see if I could simulate every possibility, I know this is in no way perfect solution, but better than nothing, so I decided to give a try.</p>
 <p>After some quick math I realized that simulating every possibility for each hero was requiring me to simulate 7^10 different combats and technical reasons (time to compute, ram needed, and hard drive space required) were making this hard, so I decided to only do the simulation with my class archetypes and that would only require me to simulate 31 878 different combats.</p>
 <p><img src="/images/Pinpin/MatchupClassVsClassWithSimulation.png" alt="Result of the simulation percentage of victory">
-<em>percentage of victory for each class (later version)</em></p>
-<p>With this percentage I was able to make a few adjustement but soon after I (finnaly!) got acess to Unity project. From there I have collaborated with one of the programmer to be able from the push of button get the stat from my online Google spreadsheet directly into unity. After having my stat in editor I was finaly able to test, setting up for a test was taking quite a lot of time, so I decided to make a tool that would allow me to quickly different composition of units in Unity.</p>
+<em>percentage of victory for each class as result of the simulation (later version)</em></p>
+<p>With this percentage I was able to make a few adjustement but soon after I (finnaly!) got acess to Unity project. From there I have collaborated with one of the programmer to be able from the push of button get the statistics from my online Google spreadsheet directly into unity. After having my stat in editor I was finaly able to test, setting up for a test was taking quite a lot of time, so I decided to make a tool that would allow me to quickly different composition of units in Unity.</p>
 <p><img src="/images/Pinpin/ToolUnity1.png" alt="Tool for testing combat"></p>
-<p>After some much-needed testing, as I was tweaking my values I realize my system with coefficient was not very efficient. It was often hard to know what coefficient to choose because the coefficient have different order making modification hard.</p>
+<p>After some much-needed testing, as I was tweaking my values I realize my system with coefficients was not very efficient. It was often hard to know what coefficient to choose because the coefficient have different order making modification hard.</p>
 <p>So I have try using a new system that use a word in wich for each statistic we assign a value for a scale of word and then for each stat of each hero we assign a word.</p>
 <p><img src="/images/Pinpin/scales.png" alt="Scales"></p>
 <p><img src="/images/Pinpin/words.png" alt="Words"></p>
 <p>This system is easier because you can eassily do modifcations to one stat of every hero without breaking balancing as you don't need to modify the word but only the value of the scale.</p>
 <p>But the most important thing that this systme do, is to enforce intentionnality.</p>
-<p>When dealing with nomber it quickly becomes hard to know what they mean, for exemple is 600 health good ? Not necessary, if every other hearoes has 1 200 health it's probably pretty bad. But if all heroes was having 200 health it would be very good. By using words and scale, we can focus on the number when making the scale and then when balencing a hero we only have to think whether a particalar stat is good, bad or in between.</p>
+<p>When dealing with nomber it quickly becomes hard to know what they mean, for exemple is 600 health good ? Not necessary, if every other hearoes has 1200 health it's probably pretty bad. But if all heroes was having 200 health it would be very good. By using words and scale, we can focus on the number when making the scale and then when balencing a hero we only have to think whether a particalar stat is good, bad or in between.</p>
 <p><img src="/images/Pinpin/ClassInteraction.jpg" alt="Classes"></p>
 <p>The only problem with this system was I have monitor that the different unit were staying true to the class myself and not by default.
 In restropective, I should have combined this system with the second system when derived unit from a class archetype.</p>
@@ -170,7 +170,7 @@ In restropective, I should have combined this system with the second system when
 <p>I have opted for a system where for each capacity I was determing whate were the different variable that were important to capacity, to be able to tweak them easily, and then I was doing some small calculation to get some insights (calculating dps according to damge stat of the heroes, time to launch capacity, ...).</p>
 <p><img src="/images/Pinpin/Capacities.png" alt="Capacities">
 <em>Part of my spreadsheet for balancing capacities</em></p>
-<p>When tweaking the values of the system I was faced with a problem, as I was trying to balance the different capacity it was hard to know what each hero was doing for their team. While I could have just tested one hero against one hero, I have already learned the hard way, that 1 vs 1 combat were not representative of 5 vs 5 fight (the most common situation, aside from the tutorial) and that it was way better to test how good was performing a hero in a team than alone.</p>
+<p>When tweaking the values of the system I was faced with a problem, as I was trying to balance the different capacity it was hard to know what each hero was doing for their team. While I could have just tested one hero against one hero, I have already learned the hard way, that 1 vs 1 combat were not representative of 5 vs 5 fight (the most common situation, aside from the tutorial) and that it was way better to test how good was performing a hero in a team rather than alone.</p>
 <p>So I decided to do a little tool that would track how good was performing a hero in afight (damage, heal, ...) each hero was doing during the fight.</p>
 <p><img src="/images/Pinpin/statisticTable.png" alt="A little table that would sumarize stats of the last fight"></p>
 <p><em>A little table that would sumarize stats of the last fight</em></p>
@@ -180,10 +180,10 @@ I was hoping to change it, but I started to run out of time and decided was prob
 <h2>Macroeconomy</h2>
 <p>After having finishing the heroes balancing, I have started to balance the global economy of the game.</p>
 <p>I have begun by making a schema of the differents interactions between the currencies, then estimate how much the player will gain of each currency and what it will allow them to buy. I have tried to do it in the way that it will get progressivly harder to acquire resssource and so the player is more and more tempt to spend money in the game.</p>
-<p><img src="/images/Pinpin/MetaSchema.drawio.png" alt="Meta Schema">
+<p><img src="/images/Pinpin/MetaSchema.drawio.png" alt="Meta-schema">
 <em>Schema of the different interaction of currencies</em></p>
-<p>To try to simplify my work, especially doing estimation I have try using Jupyter notebook for python as an alternative to a spreadsheet. Notebook (in programation) wich is a way to present code, the result of this code and with some explications, the idea was for to be able to anlyze more the values and how they would behave and do it more simply than with Excel. But after having done a lot of my balencing of the macroeconomy I became worry that due the novelty of doing things would slow me down (I start to be really short on time) and the fact it is not a common tool in video game that the team would be more confuse to use this than basic spreadsheet.
-Even if as not work due to time and novelty I would be delighted to have the occassion to try again on another project where it could be usefull.</p>
+<p>To try to simplify my work, especially doing estimation I have try using Jupyter notebook for python as an alternative to a spreadsheet. Notebook (in programation) wich is a way to present code, the result of this code and with some explications, the idea was for to be able to anlyze more the values and how they would behave and do it more simply than with Excel. But after having done a lot of my balencing of the macroeconomy I became worry that due the novelty of doing things like that would slow me down (I start to be really short on time) and the fact it is not a common tool in video game could mean that the team would be more confuse to use this than basic spreadsheet.
+Even if it has not work due to time and novelty I would be delighted to have the occassion to try again on another project where it could be usefull.</p>
 <p><img src="/images/Pinpin/PythonNotebook1.png" alt="Python notebook 1">
 <img src="/images/Pinpin/PythonNotebook2.png" alt="Python notebook 2">
 <em>Small part of my Python notebook</em></p>
