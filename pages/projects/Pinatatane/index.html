@@ -131,57 +131,32 @@ background-repeat: no-repeat;" >
 <h1>PITCH</h1>
 <p>Pinatatane is a 4-player party game, in which you embody a Pinata that fights other Pinatas in order to have the most candies.</p>
 <p>You move your Pinata using a third-person view and have two abilities; the first is a dash that let you cover distance quickly as well as pushing other players. The second is a shield that makes you invincible and make other players who dash on you bounce off away from you.</p>
+<p><img src="/images/Pinatatane/Dash4.jpg" alt="Dash"></p>
 <p>To win you have to be the player with most candies at the end of the three minutes round. To Gain candies you can either collect collect them when they spawn periodically in the arena or pick them up when another player die. When a player hits a cactus or hit a wall with enough velocity they die, upon death they drop down 25% of their candies. While dead, players cannot pick up candies,they are invincible and they can still move but more slowly; after a short period of time they are alive again. Players must use their dash to project other player into wall or cactus (the cactus stun for a short amount of time) in order to get a chance to pick a part of their candies.</p>
-<div class="flex flex-row space-x-3 mb-3">
-    <div class="basis-1/2">
-        <img class="rounded-md" src="/images/Pinatatane/joyfulPina.png">
-    </div>
-    <div class="basis-1/2">
-        <img class="rounded-md" src="/images/Pinatatane/Dash4.jpg">
-    </div>
-</div>
+<p><img src="/images/Pinatatane/joyfulPina.png" alt="Dash"></p>
 <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/ySOWYzZbqGw" title="Pinatatane Trailer" frameborder="0" ></iframe>
 <h2>Wandering and difficulties</h2>
 <p>If the goal to collect candies was the same for the whole project, it wasn't not the case for the lasso. The lasso was the core mechanic and where the dash was a dodge mechanic for half of the project. The lasso was a rope that a player would launch in front of them. If it lands on an enemy, it would allow to control it for a brief period of time. And then to throw it in one of the four direction.</p>
 <p>We made several mistakes at this point, the first was to not prototype directly by ourselves as designer and let the programmer do it. It was a problem because, they were testing their problematics like online features, but not our design. It seems obvious in retrospective, but we should have made some paper prototype or transpose the game in 2D to prototype it. Instead of prototyping we were doing exhaustive documentation and trying to improve the design without having had the opportunity to actually test it.</p>
+<p><img src="/images/Pinatatane/MapNoUIWithCandies.jpg" alt="Map"></p>
 <p>When finally we have a working prototype, it was almost mid-project. And we started to discover some major design flaws by testing them. The lasso was difficult to aim, it was difficult to control people with it and it was almost impossible to throw someone in a wall or in a cactus reliably. Some lags and bugs were not helping it either, but most important we started to discover that it would be very difficult to make it works technically. With the time remaining, the technical and design problems, it wasn't wise to keep it, so we decided to cut it. Since the dash was working, we decided to make it the way to push enemies in obstacles. We also added the shield as way to defend ourselves against the dash. We intended to put a grappling to keep part of the previous work, but we end up cutting it.</p>
+<p><img src="/images/Pinatatane/Shield.jpg" alt="Shield"></p>
 <p>This major redirection has taken sometime to happen, but it was a major breath of air for whole team. As we were starting to have the new feature in our project some new problems start to emerge. One of the most concerning was the difficulty that players were having to touch each other. Who was leading to a collect play-style where player would not fight and would go collect candies because it was the most efficient tactics. To solve this problem we started by making hitbox bigger during the dash of player. It was increasing the chance of touching another player but also the chance of people dashing into obstacle especially cactus. Making people kill themselves by repeatedly dashing into cactus, emphasizing even more the collect play-style.</p>
 <p>Finally the solution that we found was to put an aimbot on the dash. It was so that if another player is a cone in front of your character, it will automatically dash into him. We managed to do it so that most people were not able to perceive it.</p>
+<p><img src="/images/Pinatatane/MapNoUI4.jpg" alt=""></p>
 <p>At the same time, we also made important decisions to make people fight more. The first decision was to change the way that death work, at first we were with a system of life point and respawn point. And we change it to a system where you have no life point and every time you hit something with enough velocity you die. Death only mean that you are slow down and can't pick candies.</p>
 <p>The second thing was to make people use the shield more and was very simple, we allowed people to move while using the shield. It was way more dynamic and incite people to use it more since it was more powerful. With a few more tweaks and we were at the end. Players were founding the game fun to play and I am proud of this project.</p>
-<img class="" src="/images/Pinatatane/Shield.jpg" >
-<img class="" src="/images/Pinatatane/ScreenInGame02.jpg" >
+<p><img src="/images/Pinatatane/ScreenInGame02.jpg" alt="In game"></p>
 <h2>LEVEL DESIGN</h2>
 <p>I was in charge of the level design so my mission was to design arena in which the player will be fighting. The game is about Pinatas which are a Mexican tradition. So I decided, to have a look on some references in the architecture of Mexico over their history and to use &quot;Google Street view&quot; to see how their cities are constructed and looked like. With these inspirations, I decided to make a map that will happen at one road who joins another and where it forms cozy plaza. Then, I thought how I want players to move in the arena and I decided to make them move along a circle with so side-path at the center.</p>
+<p><img src="/images/Pinatatane/BllockoutTopView.png" alt=""></p>
 <p>After the redirection of the project, we decided to keep the map and just adjusted it. At some point we realized that collecting playstyle was also coming from map. Firstly, I was using a lot of candies spawner so there will was always a place where the players can go to collect candies. It was distracting players and was an incentive to go collect these candies. So we decided, to only put three spawners at the important place and to have only one active at time to push player to fight.</p>
+<p><img src="/images/Pinatatane/Blockout2.png" alt=""></p>
 <p>Secondly, there was too much cactus, causing people to be afraid to dash. By reducing and reducing the cactus to the core places, people we more confident and aggressive, like we wanted to.</p>
 <p>It was at that time I was refocusing the map around this point making them three battlegrounds and removing distracting side-path. I also start using the roads as way of guiding player in the arena instead of putting them for the lore. I also changed the center to change it from a side-path to a main path and bring the attention on it. And finally I made sure that there would be some pauses in the spawn of candies so player have time to fight and chase each other.</p>
-<img class="" src="/images/Pinatatane/BllockoutTopView.png" >
-<img class="" src="/images/Pinatatane/Blockout2.png" >
-<div class="relative w-full flex gap-6 overflow-x-auto pb-4">
-    <div class="snap-center shrink-0 first:pl-8 last:pr-8">
-      <img class="shrink-0 h-96  rounded-lg shadow-xl bg-white" src="/images/Pinatatane/TopViewOld1.png">
-    </div>
-    <div class="snap-center shrink-0 first:pl-8 last:pr-8">
-      <img class="shrink-0 h-96 rounded-lg shadow-xl bg-white" src="/images/Pinatatane/TopViewLast.jpg">
-    </div>
-    <div class="snap-center shrink-0 first:pl-8 last:pr-8">
-      <img class="shrink-0 h-96 rounded-lg shadow-xl bg-white" src="/images/Pinatatane/MapNoUI7.jpg">
-    </div>
-    <div class="snap-center shrink-0 first:pl-8 last:pr-8">
-      <img class="shrink-0 h-96 rounded-lg shadow-xl bg-white" src="/images/Pinatatane/MapNoUI4.jpg">
-    </div>
-    <div class="snap-center shrink-0 first:pl-8 last:pr-8">
-      <img class="shrink-0 h-96 rounded-lg shadow-xl bg-white" src="/images/Pinatatane/MapNoUIWithCandies.jpg">
-    </div>
-</div>
-<!--
-<img class="" src="/images/Pinatatane/TopViewOld1.png" >
-<img class="" src="/images/Pinatatane/TopViewLast.jpg" >
-<img src="/images/Pinatatane/MapNoUI7.jpg" >
-<img src="/images/Pinatatane/MapNoUI4.jpg" >
-<img src="/images/Pinatatane/MapNoUIWithCandies.jpg" >
--->
+<p><img src="/images/Pinatatane/TopViewOld1.png" alt=""></p>
+<p><img src="/images/Pinatatane/TopViewLast.jpg" alt="">
+<img src="/images/Pinatatane/MapNoUI7.jpg" alt=""></p>
 
                 </div>
             </div>

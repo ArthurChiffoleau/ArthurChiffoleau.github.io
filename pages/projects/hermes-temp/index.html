@@ -1,8 +1,8 @@
 <h3>Merchant games</h3>
-<p>There is very few game that only focus on the merchant</p>
-<p>/ ///  mercheant game analysis /// /</p>
-<ul>
-<li>Chercher des référence, comment marche les système</li>
-<li>Première mise en place des systèmes</li>
-<li>Nouvelle recherche des concept économique</li>
-</ul>
+<p>To solving these problems, I begin to look for reference of games where you can play as merchant and found multiple interesting insight.</p>
+<h2>Merchant</h2>
+<p>One these insight was that market need actors, has long has there is multiple actor selling and buying the market will appear and organize himself leading to price variation and depth. This make it ideal for game with mutiple entity with similar capacity, for exemple STR (offworld, age of empire) games or 4x Games (most paradox games have markets) and they work especially well in multiplayer. STR and 4X also benefit from the fact that fact the market is tied to other aspect of the game like politics and war and so the player can influence the market throught these aspect.</p>
+<p>But being solo game with very different actors (island vs plane) and no other system to influence the market were making things difficult. I decided that islands would trade between them and that player would influence price on ressource the price as well as the quantity on the island.</p>
+<p>One of problem that I was facing in my python prototype when I implemented to variation of price when the player buy on the island was that buying and selling back would make richer. To avoid this problem I have make it that the player is always at disadventage by making him buy at higher price and sell at lower price.
+An other problem was if the player was only focusing on one ressource the other would become stall and wouldn't very interesting. After a bit research I discover the princip of substitution goods, where similar goods will be use as replacement if one good price increase and thus their price will increase also. By organizing the ressources in category when the player was buying or selling one ressource it would affect the other ressource of the category making the system more dynamic.</p>
+<p>When I was about to test these last system everythings was brought to an end.</p>
