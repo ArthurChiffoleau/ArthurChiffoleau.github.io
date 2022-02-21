@@ -130,12 +130,12 @@ background-repeat: no-repeat;" >
             <div class="mx-6 mt-6 mb-8 ">
                 
 
-                <p class="font-bold font-sans text-3xl md:text-4xl lg:text-6xl mb-6 text-white"> Balencing an auto battler with huge nomber of variable </p>
+                <p class="font-bold font-sans text-3xl md:text-4xl lg:text-6xl mb-6 text-white"> Balencing an auto battler with huge number of variable </p>
                 <p class="font-sans text-2xl md:text-3xl lg:text-4xl  mb-14 font-bold bg-clip-text text-transparent bg-gradient-to-t from-orange-500 to-yellow-500 py-2">Tribal idle</p>
                 <div class="text-blog-formatting md:mx-10">
                     <p><img src="/images/Pinpin/MARKETING_ILLU5.png" alt="Artwork"></p>
 <p>I have done a four months internship at &quot;Pinpin team&quot; an enterprise specialized in hyper-casual and casual mobile games. I was working on Tribal idle, an upcoming Idle game on mobile, as Economic designer.</p>
-<p>My two main mission we to balance the 32 heroes and to balance the macroeconomy.</p>
+<p>My two main missions were to balance the 32 heroes and to balance the macroeconomy.</p>
 <blockquote>
 <p>Note: From now on I will be referring to balance as the act of finding the most suited numbers (for exemple how much life have enemies and how much damage deal a capacity...) for having the best experience in-game</p>
 </blockquote>
@@ -145,71 +145,71 @@ It's similar to the mobile game AFK Arena, if you are familiar with it.</p>
 <p><img src="/images/Pinpin/Combat.gif" alt="Screen in Game">
 <em>Gif of combat</em></p>
 <h2>Balancing of heroes</h2>
-<p>My first mission was to balance all the heroes in the game, each hero have 16 statistics (attack, defense, energy there are attribute onto we associate a value) and two abilities, one passive ability and one that can be activated by the player.
-Before my arrival they already make the different heroes, their visual, their identity and there were in the process of implementing them, especially their different ability.</p>
+<p>My first mission was to balance all the heroes in the game, each hero have 16 statistics or numbers (attack, defense, energy ... )  and two abilities, one passive ability and one that can be activated by the player.
+Before my arrival they have already made the different heroes, their visual, their identity and there were in the process of implementing them, especially their different abilities.</p>
 <h3>Balancing of stats</h3>
-<p>I was advised to start by coming up for the different value for each stat. I started by coming for each stat one by one, reading the description of each hero and trying to come up with some statistics for each hero. It wasn't a good way of doing things, it was a bit random, was very hard to modify and there wasn't any class identity.</p>
-<p>I immediately try to use a better way that was creating one archetype for each class of heroes, and then using coefficient to modify heroes belonging to this class. It seems better, but since it was only ideas I didn't have any way to know sure, so I decided that it was time to confront it to the reality. For some logistic reason I didn't have access to the project, so in order to be able to have a first test I decided to put a small combat simulation in Python.</p>
+<p>I was advised to start by coming up for the different values for each stat. I started by coming for each stat one by one, reading the description of each hero and trying to come up with some statistics for each hero. It wasn't a good way of doing things, it was a bit random, was very hard to modify and there wasn't any class identity.</p>
+<p>I immediately try to use a better way that was creating one archetype for each class of heroes, and then using coefficient to modify heroes belonging to this class. It seems better, but since it was only ideas I didn't have any way to know for sure, so I decided that it was time to confront it to the reality. For some logistic reason I didn't have access to the project, so in order to be able to have a first test I decided to put a small combat simulation in Python.</p>
 <p><img src="/images/Pinpin/secondWayOfHandlingStats.png" alt="Second way of doing stats">
 <em>Part of my second spreadsheat for doing statistics</em></p>
 <p><img src="/images/Pinpin/SimulationDeCombat.png" alt="Screen of simulation">
 <em>My python simulation</em></p>
 <p>My python simulation was able to simulate combat between two team of heroes, give the logs of the combat and the winner. With my python program, I was able to start to fix most broken class and heroes and adjust the time of an average match. But soon I was faced with a big problem, how can I know what composition will be used ? And what composition should I test ? Even I could imagine a classic composition that the player could use, there was no way to know for sure. So I have tried to see if I could simulate every possibility, I know this is in no way perfect solution, but better than nothing, so I decided to give a try.</p>
-<p>After some quick math I realized that simulating every possibility for each hero was requiring me to simulate 7^10 different combats and technical reasons (time to compute, ram needed, and hard drive space required) were making this hard, so I decided to only do the simulation with my class archetypes and that would only require me to simulate 31 878 different combats.</p>
+<p>After a quick calculation I realized that simulating every possibility for each hero was requiring me to simulate 7e10 different combats and technical reasons (time to compute, ram needed, and hard drive space required) were making this hard, so I decided to only do the simulation with my class archetypes and that would only require me to simulate 31 878 different combats.</p>
 <p><img src="/images/Pinpin/MatchupClassVsClassWithSimulation.png" alt="Result of the simulation percentage of victory">
 <em>percentage of victory for each class as result of the simulation (later version)</em></p>
-<p>With this percentage I was able to make a few adjustement but soon after I (finnaly!) got acess to Unity project. From there I have collaborated with one of the programmer to be able from the push of button get the statistics from my online Google spreadsheet directly into unity. After having my stat in editor I was finaly able to test, setting up for a test was taking quite a lot of time, so I decided to make a tool that would allow me to quickly different composition of units in Unity.</p>
+<p>With this percentage I was able to make a few adjustement but soon after I (finnaly!) got acess to Unity project. From there I have collaborated with one of the programmer to be able from the push of button get the statistics from my online Google spreadsheet directly into unity. After having my stats in editor I was finally able to test, setting up for a test was taking quite a lot of time, so I decided to make a tool that would allow me to quickly different composition of units in Unity.</p>
 <p><img src="/images/Pinpin/ToolUnity1.png" alt="Tool for testing combat"></p>
-<p>After some much-needed testing, as I was tweaking my values I realize my system with coefficients was not very efficient. It was often hard to know what coefficient to choose because the coefficient have different order making modification hard.</p>
+<p>After some much-needed testing, as I was tweaking my values I realize my system with coefficients was not very efficient. It was often hard to know what coefficients to choose because each coefficient have a different order of magnitude making modification hard.</p>
 <p>So I have try using a new system that use a word in wich for each statistic we assign a value for a scale of word and then for each stat of each hero we assign a word.</p>
 <p><img src="/images/Pinpin/scales.png" alt="Scales"></p>
 <p><img src="/images/Pinpin/words.png" alt="Words"></p>
-<p>This system is easier because you can eassily do modifcations to one stat of every hero without breaking balancing as you don't need to modify the word but only the value of the scale.</p>
-<p>But the most important thing that this systme do, is to enforce intentionnality.</p>
-<p>When dealing with nomber it quickly becomes hard to know what they mean, for exemple is 600 health good ? Not necessary, if every other hearoes has 1200 health it's probably pretty bad. But if all heroes was having 200 health it would be very good. By using words and scale, we can focus on the number when making the scale and then when balencing a hero we only have to think whether a particalar stat is good, bad or in between.</p>
+<p>This system is easier because you can easily do modifications to one stat of every hero without breaking balancing as you don't need to modify the word but only the value of the scale.</p>
+<p>But the most important thing that this system do, is to enforce intentionnality.</p>
+<p>When dealing with number it quickly becomes hard to know what they mean, for exemple is 600 for health good ? Not necessary, if every other hero has 1200 for their health it's probably pretty bad. But if all heroes were having 200 for their health value it would be very good. By using words and scale, we can focus on the number when making the scale and then when balencing a hero we only have to think whether a particular stat is good, bad or in between.</p>
 <p><img src="/images/Pinpin/ClassInteraction.jpg" alt="Classes"></p>
-<p>The only problem with this system was I have monitor that the different unit were staying true to the class myself and not by default.
-In restropective, I should have combined this system with the second system when derived unit from a class archetype.</p>
-<p>Even with this problem, it was probably the best system I have done because everytime I have needed to make modifications of heroes stat it was fast and easy to do so.</p>
+<p>The only problem with this system was I have monitor that the different unit were staying true to the class (e.g. a tank need to feel like it's a resistant unit and a assassin must feel like a fragile unit that can deal a lot of damage) myself and not by default.
+In restropective, I should have combined this system with the second system where I derived units from a class archetype.</p>
+<p>Even with this problem, it was probably the best system I have done because everytime I needed to make modifications of heroes stat it was fast and easy to do so.</p>
 <h3>Balencing of capacity</h3>
 <p>After having done the statistics of heroes I started doing the capacities, it was much harder task to do because it was harder to compare capacities between them, and it was hard to integrate.</p>
 <p>I have opted for a system where for each capacity I was determing whate were the different variable that were important to capacity, to be able to tweak them easily, and then I was doing some small calculation to get some insights (calculating dps according to damge stat of the heroes, time to launch capacity, ...).</p>
 <p><img src="/images/Pinpin/Capacities.png" alt="Capacities">
 <em>Part of my spreadsheet for balancing capacities</em></p>
 <p>When tweaking the values of the system I was faced with a problem, as I was trying to balance the different capacity it was hard to know what each hero was doing for their team. While I could have just tested one hero against one hero, I have already learned the hard way, that 1 vs 1 combat were not representative of 5 vs 5 fight (the most common situation, aside from the tutorial) and that it was way better to test how good was performing a hero in a team rather than alone.</p>
-<p>So I decided to do a little tool that would track how good was performing a hero in afight (damage, heal, ...) each hero was doing during the fight.</p>
+<p>So I decided to do a tool that would track how good was performing a hero in a fight (damage, heal, ...) each hero was doing during the fight.</p>
 <p><img src="/images/Pinpin/statisticTable.png" alt="A little table that would sumarize stats of the last fight"></p>
-<p><em>A little table that would sumarize stats of the last fight</em></p>
+<p><em>A table that would sumarize stats of the last fight</em></p>
 <p>This has considerably helped me to balance the different capacities of each hero and this have gived me an opportunity to further tweak the statistics of each hero.</p>
-<p>To be frank the system to balance the capacity was not great, while at the end the system was 95% automatic it was not great system because it was tidious to get working, then it was not flexible and a bit hard to balance. Hopefully the fact this was stil not too slow (due to being automatic) and the helper that I built have made it acceptable to balance.
+<p>To be frank the system to balance the capacity was not great, while at the end the system was 95% automatic it was not great system because it was tidious to get working, then it was not flexible and a bit hard to balance. Hopefully the fact this was still not too slow (due to being automatic) and the helper that I built have made it acceptable to balance.
 I was hoping to change it, but I started to run out of time and decided was probably better to have everything rough rather than missing a part of values for the game that could deny the ability to test the game properly.</p>
 <h2>Macroeconomy</h2>
 <p>After having finishing the heroes balancing, I have started to balance the global economy of the game.</p>
-<p>I have begun by making a schema of the differents interactions between the currencies, then estimate how much the player will gain of each currency and what it will allow them to buy. I have tried to do it in the way that it will get progressivly harder to acquire resssource and so the player is more and more tempt to spend money in the game.</p>
+<p>I have begun by making a schema of the differents interactions between the currencies, then estimate how much the player will gain of each currency and what it will allow them to buy. I have tried to do it in the way that it will get progressively harder to acquire resources and so the players are more and more tempt to spend money in the game.</p>
 <p><img src="/images/Pinpin/MetaSchema.drawio.png" alt="Meta-schema">
-<em>Schema of the different interaction of currencies</em></p>
-<p>To try to simplify my work, especially doing estimation I have try using Jupyter notebook for python as an alternative to a spreadsheet. Notebook (in programation) wich is a way to present code, the result of this code and with some explications, the idea was for to be able to anlyze more the values and how they would behave and do it more simply than with Excel. But after having done a lot of my balencing of the macroeconomy I became worry that due the novelty of doing things like that would slow me down (I start to be really short on time) and the fact it is not a common tool in video game could mean that the team would be more confuse to use this than basic spreadsheet.
+<em>Schema of the different currency interactions</em></p>
+<p>To try to simplify my work, especially doing estimation I have try using Jupyter notebook for python as an alternative to a spreadsheet. Notebook (in programation) is a way to present code, the result of this code and with some explications, the idea was for me to be able to analyze more the values and how players would behave. It was easier than using Excel, however after having done a lot of my balencing of the macroeconomy I became worry that due the novelty of doing things like that would slow me down (I start to be really short on time) and the fact it is not a common tool in video game could mean that the team would be more confuse to use this than basic spreadsheet.
 Even if it has not work due to time and novelty I would be delighted to have the occassion to try again on another project where it could be usefull.</p>
 <p><img src="/images/Pinpin/PythonNotebook1.png" alt="Python notebook 1">
 <img src="/images/Pinpin/PythonNotebook2.png" alt="Python notebook 2">
-<em>Small part of my Python notebook</em></p>
-<p>One noteworthy things that I have done in the macroeconomy was the shop, where I was needed to the shop where player would buy currency. In the shop I have proposed different range price for so that every range of players with different wallet have a sastsfying pay option, some decoy to make think the player is smart by choosing them and I have make sure that the more you spend, the more you get, so you are always incited to buy the higher options.
+<em>Part of my Python notebook</em></p>
+<p>One noteworthy thing that I have done in the macroeconomy was the shop, where I was needed to the shop where player would buy currency. In the shop I have proposed different range of prices for so that every range of players with different wallet have a satisfying pay option, some decoys to make think the player is smart by avoiding them and I have to make sure that the more you spend, the more you get, so you are always incited to buy the higher options.
 And the most important I have make sure that user who pays would not have too much and lose interest in playing the game.
 <img src="/images/Pinpin/Shop.png" alt="Shop"></p>
 <h2>Conclusion</h2>
-<p>One of most important thing of balancing is to being able to test with outside playtester but due to external reason, it was not possible, and so I was not able to get my hand on player data. I would have stay longer I would have done my possible to do so and hope that I would have the futur oportunity to do so.</p>
+<p>One of most important thing of balancing is to being able to test with outside playtester but due to external reasons, it was not possible, and so I was not able to get my hand on player data. I would have stay longer I would have done my possible to do so and hope that I would have the futur oportunity to do so.</p>
 <p>In the end it was a very good experience, I learn a lot about how to balance things, and I am super proud of my work. While due to my limited time in the team and the advancement of project I was not able to give a final version of the balancing, I think that I have laid the ground for the balancing of the game and have leave tools for the team, so they can modify my balancing.
 And I will be super excited to play the game when it releases !</p>
 <h2>Bonus</h2>
 <p><img src="/images/Pinpin/Playfab_CharacterDrop.png" alt="Playfab">
 <em>We were using playfab that was allowed us to store values that the player would get every time they start the app, here it's the drop value of each character</em></p>
 <p><img src="/images/Pinpin/AnalyseStatHero.png" alt="Small analyse">
-<em>Some analyse that I was doing on hero statistic</em></p>
+<em>Some analysis that I was doing on hero statistic</em></p>
 <p><img src="/images/Pinpin/ChanceOfDropOfItem.png" alt="ItemDrop">
 <em>I have reuse the same system for balancing items that I was using for heroes</em></p>
 <p><img src="/images/Pinpin/LevelDesignEntry.png" alt="Level design entry">
 <img src="/images/Pinpin/LevelDesignDifficultyCurve.png" alt="Level design graph">
-<em>Small test that I was doing at the end to try to generate from level design enemy composition a curve of difficulty</em></p>
+<em>A test that I was doing at the end to try to generate from level design enemy composition a curve of difficulty</em></p>
 <p><img src="/images/Pinpin/Picture9.gif" alt="Funny">
 <em>When I was thinking &quot;no way anyone is going to walk on that trap, let's boost the damage a little&quot; I wasn't accounting for the character that jump behind ennemies to bug and backward jump to his death as soon as the fight started ...</em></p>
 
@@ -244,7 +244,7 @@ And I will be super excited to play the game when it releases !</p>
                         <span class="inline-block align-middle">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="white"><path fill-rule="evenodd" d="M5.75.75A.75.75 0 016.5 0h3a.75.75 0 010 1.5h-.75v1l-.001.041a6.718 6.718 0 013.464 1.435l.007-.006.75-.75a.75.75 0 111.06 1.06l-.75.75-.006.007a6.75 6.75 0 11-10.548 0L2.72 5.03l-.75-.75a.75.75 0 011.06-1.06l.75.75.007.006A6.718 6.718 0 017.25 2.541a.756.756 0 010-.041v-1H6.5a.75.75 0 01-.75-.75zM8 14.5A5.25 5.25 0 108 4a5.25 5.25 0 000 10.5zm.389-6.7l1.33-1.33a.75.75 0 111.061 1.06L9.45 8.861A1.502 1.502 0 018 10.75a1.5 1.5 0 11.389-2.95z"/></svg>
                         </span>
-                        <span>3   months</span>
+                        <span>4 months</span>
                     </span>
                 </p>
             </div>
