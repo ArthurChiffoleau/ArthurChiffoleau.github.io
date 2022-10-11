@@ -136,62 +136,11 @@ background-repeat: no-repeat;" >
                     <p><img src="/images/Hermes/LD_PAINTOVER_.png" alt="Artwork"></p>
 <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/6p17LkYmz0Q" title="Hermes trailer" frameborder="0" ></iframe>
 <p><em>Hermes trailer</em></p>
-<p>Hermes is a plane game in which you explore the world, and you try to escape a mysterious cataclysm. You fly from island to island while trying to understand the origin of cataclysm and maybe fight back.</p>
-<p>I am working as Game Designer and Level designer, at this time my main job is to think/write documentation about different features related to the plane, tweak settings of the plane and do parts of the level design.</p>
 <p><img src="/images/Hermes/HighresScreenshot00003(1).png" alt="Image of game"></p>
 <h2>Economy</h2>
-<p>At first there was an economic part in the game, the player was a merchant that would land on an island and will buy/sell merchandises.
-I was in charge of designing the economic system to create a fun and engaging merchant experience that would complement the fly experience.</p>
-<p>At first, I came up with the simplest system, that was the player can buy and sell with money different resource at different price on each island. As it is the base of the current economic system, I was thinking it could be an interesting system where the player will find his fun in trying to get richer and richer through multiple trade.</p>
-<h3>First prototype</h3>
-<p>Knowing it was probably too good to be really work, I decided to create a small python prototype that would test this idea.</p>
 <p><img src="/images/Hermes/python_9BPtsY9RkL.png" alt="Image du prototype python">
 <em>Screen of my python prototype</em></p>
-<p>When testing the prototype I start to realize multiple things, firstly in order for the system to be interesting the player would have to make a lot of trade.
-Secondly, even in the case of the player going from island to island and trading for an extended period of time, it wasn't very fun. Remembering resources price was hard (I was testing with 10 different resource on each island), making profit was easy once you see something cheap, and you find somewhere to sell at better price, you could basically loop between the two island and have infinite money.</p>
-<p>To sum-up my problems, the player was lacking information to engage with the system, the system was easily fooled, and the system was stagnant making it boring to engage with.</p>
-<p>To solving these problems, I begin to look for reference of games where you can play as merchant and found multiple interesting insight.</p>
-<h3>Merchant</h3>
-<p>One these insights was that market need actors, as long as there is multiple actor selling and buying the market will appear and organize himself leading to price variation and depth. This make it ideal for game with mutiple entity with similar capacity, for exemple STR (offworld, age of empire) games or 4x Games (most paradox games have markets) and they work especially well in multiplayer. STR and 4X also benefit from the fact that the market is tied to other aspect of the game like politics and war so the player can influence the market throught these aspects.</p>
-<p>But being solo game with very different actors (island vs plane) and no other system to influence the market were making things difficult. I decided that islands would trade between them, that player would influence price on resource the price and that there would limited supply of resource on each island.</p>
 <p><img src="/images/Hermes/CommerceSimpleDiagram.png" alt="Schema"></p>
-<p>One of problem that I was facing in my python prototype when I implemented to variation of price when the player buy on the island was that buying and selling back would make richer. To avoid this problem I have made it that the player is always at disadvantage by making him buy at higher price and sell at lower price.
-Another problem was if the player was only focusing on one resource the other would become stall and wouldn't be very interesting. After a bit of research I discover the principle of substitution goods, where similar goods will be use as replacement if one good price increase and thus their price will increase also. By organizing the resources in categories when the player was buying or selling one resource it would affect the other resource of the category making the system more dynamic.</p>
-<p>When I was about to test these last system everything was brought to an end.</p>
-<h2>A big change</h2>
-<p>In the end we decided to cut the whole economic part, the main reason was time. We are doing this as part of a school project and will have a jury that will play our prototype for a maximum of 30 minutes. Making a plane game alongside a merchant game will be very hard because learning the merchant part will take quite some time and there is no point in making a hypothetical experience that no one will have time to play.</p>
-<p>By making this hard decision, we will be hopefully able to make a better plane game that will deliver a strong experience.</p>
-<h2>Working on the controller</h2>
-<p>While I was already working on the controller before, the end of trade part of the game and the decision to focus our game about the fly experience mean that I was able more than ever to focus on the controller.</p>
-<p>Making a player controller is a daunting and hard task, at first when I have heard that some indie developer have spent 1 years making a controller before making anything else it was very surprise now that I am part of making one, it seems almost normal.</p>
-<p><img src="/images/Hermes/TheCrew2.jpg" alt="The crew 2">
-<em>The crew 2 our main reference</em></p>
-<p><img src="/images/Hermes/AceCombat7.jpg" alt="ace combat 7">
-<em>Ace combat 7 one of our secondary reference</em></p>
-<p>Once again, the things that have help us to make a controller was having references. Playing references and trying to understand every detail was very important, because when making a controller, it's easy to get lost and be unsure about to improve the controller. Being able to understand the details in a great controller and their impact on the experience and emotion of the player seem definitely the way to go.</p>
-<p>While we have pretty quickly understand the importance to have game reference, it was only later that we understand the importance of the &quot;real reference&quot; in our case the plane. How a plane works was a question that I gave a satisfying answer too late and should have been the first one I am asking myself.</p>
-<img class="bg-gray-400" src="/images/Hermes/Aeroforces.png" />
-<p><em>For example the forces on an airfoil, image from wikipedia</em></p>
-<p>In the future if I work again on a controller whether it's human, a car or spaceship understanding its inner working help you conceptualize what should you be simulating, how and what you shouldn't be simulating.</p>
-<h3>The big change again</h3>
-<p>Before the &quot;big change&quot; we were going for a semi-realist semi-arcade plane, with cut of the economic part we also decided to make a full arcade plane. This decision was motivated by the fact that doing focusing the game on fly we would need challenges in form of obstacles avoidance and having an agile and unrealistic plane will help us accomplish this goal.</p>
-<h3>Some lessons learned</h3>
-<p>Another things that I have learned, is to test and tweak your controller in real conditions. At first, we were testing and tweaking our controller in a scene with only cube and no art, without any FX, with wrong plane model. That resulted in all sort of problems, whether it was our plane going seemingly slow when it was in reality going at match speed. We were able to fix it, for example with some VFX (trails and speed lines), by making sure we are having a good scale and by having element of varying size (so that things move past you and give impression of speed).</p>
-<p>Controller collaboration is a real key component, so you have to make sure that you are working with everybody and as soon as possible on a common controller that include everything and his test in the most real condition possible.</p>
-<h2>A decisive playtest</h2>
-<p>Everything seem to go great until we have a milestone with a playtest with a sample of the member of the jury. While some were doing great, some of jury members were stuck at the tutorial and couldn't get pass it. And more generally, all people who do not have prior plane game experience were struggling. For a long time, we thought that full 3 axis control with a camera that follow every rotation of the plane was the way to go so that we can convey a plane experience the most effectively. But gatekeeping people was not in our intention, so we decided to change our controller.
-We locked the horizon and make, so you just control 2 axes (pitch, yaw), the was radical and have make way more accessible.</p>
-<h2>Things keep evolving</h2>
-<p>While we were changing thing in the Game Design, we hit a wall in the Level Design. Since the beginning of the project the macro goal was to go to the next island and along the way you would be challenged for  obstacles avoidance skills. One of the core problem in level design was how we avoid people just going as high as they can and skipping all the obstacles ? Our answer was putting huge walls and making a lot of canyons and having a limit in the sky, so players couldn't get off the canyon. But a some point we started to feel like we couldn't keep going,  building a huge corridor to always constrain the player was hard for us level designer and for artists it was hard to make aesthetically pleasing. So we tried a radical different approach with thing organized around island instead of corridor. The player would go from island to island and complete activity on them. And between the islands there will be nothing, that was also a thing that we learned during this project, we can have respiration moments where there is nothing.
-The last thing that we do was adding activities, instead of constraining the player to a path, we would allow them to freely roam the world, but to progress the player would need to complete activities that would challenge him on his mastery of the aircraft.</p>
-<h2>The last few</h2>
-<p>After having simplified the movement of the planned, we actually encounter the inverse problem where the movement feel too simple and a little bit shallow. To tackle this problem, we added back the roll (while not having your camera follow the roll) and a sharp turn (when roll at 90° and then turn) that allow you to turn much quicker.
-We also added a boost to allow player to go faster during downtime and that would recharge by either staying near the water or having a surface below your plane, inciting player to take risk in order to be rewarded with boost.</p>
-<h2>End</h2>
-<p>At the end we had the jury that had goes well, all players were able to finish the game and the jury feedbacks was positive, so we are really happy !</p>
-<p>I have learned so much from this project, I have improved my design ability, learned to make a controller, improve my level design ability, I have learned unreal, I have improved my communication skills and my ability to collaborate with other people.
-It was really an awesome project, made with awesome people, and I had a great time !</p>
-<p>Thank you for reading until the end !</p>
 <p><img src="/images/Hermes/HighresScreenshot00002.png" alt="Tornado"></p>
 <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/6sB7PYXbIZs?start=14" title="Hermes gameplay" frameborder="0" ></iframe>
 <p><em>Since you have make it to the end, here is a gameplay video of our final prototype, enjoy!</em></p>
