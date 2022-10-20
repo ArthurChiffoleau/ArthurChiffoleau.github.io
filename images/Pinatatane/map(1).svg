@@ -2,7 +2,7 @@
 <svg
    inkscape:export-ydpi="96"
    inkscape:export-xdpi="96"
-   inkscape:export-filename="C:\Users\Arthur\Documents\%%%PERSONNEL%%%\%IIIIIIIIIII ECOLE IIIIIIIIIII-\4___Quatrième année\Projet steam pinatata\LD\Schéma\CollisionSchema.png"
+   inkscape:export-filename="E:\ProjetDivers\PortfolioUpdate\tailwind-eleven\images\Pinatatane\CollisionSchemaWLegend.png"
    sodipodi:docname="map(1).svg"
    inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
    id="svg8"
@@ -168,16 +168,16 @@
      inkscape:snap-bbox="false"
      inkscape:snap-global="true"
      inkscape:window-maximized="1"
-     inkscape:window-y="32"
-     inkscape:window-x="1272"
-     inkscape:window-height="1017"
-     inkscape:window-width="1920"
+     inkscape:window-y="89"
+     inkscape:window-x="-8"
+     inkscape:window-height="961"
+     inkscape:window-width="1280"
      showgrid="false"
      inkscape:document-rotation="0"
      inkscape:current-layer="layer3"
      inkscape:document-units="mm"
      inkscape:cy="500.02551"
-     inkscape:cx="230.31478"
+     inkscape:cx="205.06097"
      inkscape:zoom="0.49497475"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
@@ -543,7 +543,7 @@
          style="font-size:13.3333px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect3112);fill:#000000"><tspan
            x="831.35547"
            y="38.060517"
-           id="tspan19533">CACTUS</tspan></text>
+           id="tspan19664">CACTUS</tspan></text>
       <text
          xml:space="preserve"
          transform="matrix(0.48398008,0,0,0.48398008,-274.06158,49.606381)"
@@ -553,7 +553,7 @@
          inkscape:transform-center-y="0.26726953"><tspan
            x="831.35547"
            y="38.060517"
-           id="tspan19535">BOUNCER</tspan></text>
+           id="tspan19666">BOUNCER</tspan></text>
       <text
          xml:space="preserve"
          transform="matrix(0.48398008,0,0,0.48398008,-273.37646,58.960815)"
@@ -563,7 +563,7 @@
          inkscape:transform-center-y="0.26726953"><tspan
            x="831.35547"
            y="38.060517"
-           id="tspan19537">DANGER ZONE</tspan></text>
+           id="tspan19668">DANGER ZONE</tspan></text>
       <text
          xml:space="preserve"
          transform="matrix(0.48398008,0,0,0.48398008,-273.16345,68.448883)"
@@ -573,7 +573,7 @@
          inkscape:transform-center-y="0.26726953"><tspan
            x="831.35547"
            y="38.060517"
-           id="tspan19539">BOUNCER ZONE</tspan></text>
+           id="tspan19670">BOUNCER ZONE</tspan></text>
     </g>
     <g
        transform="translate(47.585944,63.670529)"
